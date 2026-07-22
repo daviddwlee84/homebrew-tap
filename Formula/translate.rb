@@ -1,8 +1,8 @@
 class Translate < Formula
   desc "Fast terminal translation tool (CLI + TUI)"
   homepage "https://github.com/daviddwlee84/translate"
-  url "https://github.com/daviddwlee84/translate/archive/refs/tags/v0.5.0.tar.gz"
-  sha256 "9e1d5ac23d1bee73e94f27228574dc30033d0d4f31dfd0fa4a4286b2a36f07a6"
+  url "https://github.com/daviddwlee84/translate/archive/refs/tags/v0.5.1.tar.gz"
+  sha256 "39dd09be481f1a01f4e7b757542b4a8fea1c85a850d8c526aa8e25e6fc90303b"
   license "MIT"
   head "https://github.com/daviddwlee84/translate.git", branch: "main"
 
