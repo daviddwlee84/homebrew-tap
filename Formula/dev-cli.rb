@@ -1,8 +1,8 @@
 class DevCli < Formula
   desc "Task and worktree command center for multi-repository development"
   homepage "https://github.com/daviddwlee84/dev-cli"
-  url "https://github.com/daviddwlee84/dev-cli/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "ab89dcaf22d41635d5e564ec19bc53ab4d8f0547904f8aa667bf11dec5519a8e"
+  url "https://github.com/daviddwlee84/dev-cli/archive/refs/tags/v0.2.2.tar.gz"
+  sha256 "57e41c697e960a3134858c229655852bca660c92bde1a69be48acd2aa5e648cf"
   license "MIT"
   head "https://github.com/daviddwlee84/dev-cli.git", branch: "main"
 
@@ -10,7 +10,7 @@ class DevCli < Formula
 
   def install
     ldflags = "-X github.com/daviddwlee84/dev-cli/internal/cli.Version=v#{version}"
-    system "go", "build", *std_go_args(output: bin/"dev", ldflags:), "./cmd/dev"
+    system "go", "build", *std_go_args(output: bin/"dev", ldflags: ldflags), "./cmd/dev"
 
     generate_completions_from_executable(bin/"dev", shell_parameter_format: :cobra)
   end
