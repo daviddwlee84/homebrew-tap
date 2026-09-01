@@ -1,8 +1,8 @@
 class DevCli < Formula
   desc "Task and worktree command center for multi-repository development"
   homepage "https://github.com/daviddwlee84/dev-cli"
-  url "https://github.com/daviddwlee84/dev-cli/archive/refs/tags/v0.2.2.tar.gz"
-  sha256 "57e41c697e960a3134858c229655852bca660c92bde1a69be48acd2aa5e648cf"
+  url "https://github.com/daviddwlee84/dev-cli/archive/refs/tags/v0.2.4.tar.gz"
+  sha256 "732e12fd37f0ecf256e700ae57abbfc3e629084977e2d9a90e4fee250b53bd8c"
   license "MIT"
   head "https://github.com/daviddwlee84/dev-cli.git", branch: "main"
 
