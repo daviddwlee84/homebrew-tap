@@ -5,23 +5,23 @@ class ExpCli < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/daviddwlee84/exp-cli/releases/download/v0.1.0/exp-cli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "9d0ea7a19de0572209fb5590c2ed8b6a9c207a24a5aea2b43c8d67ca7c6b406a"
+      url "https://github.com/daviddwlee84/exp-cli/releases/download/v0.1.1/exp-cli_0.1.1_darwin_arm64.tar.gz"
+      sha256 "cc626ef2660f75f48cec3a7ff680e8244b363724e2f51a8435e279c1f14ec979"
     end
     on_intel do
-      url "https://github.com/daviddwlee84/exp-cli/releases/download/v0.1.0/exp-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "7954d98fdc938b18b1afbf278887adc5734ebac910059e38d6fad9524316f8db"
+      url "https://github.com/daviddwlee84/exp-cli/releases/download/v0.1.1/exp-cli_0.1.1_darwin_amd64.tar.gz"
+      sha256 "af8d3e54a948ca311191694086ca41b50151d24569702eb6945b27f5902aa6e6"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/daviddwlee84/exp-cli/releases/download/v0.1.0/exp-cli_0.1.0_linux_arm64.tar.gz"
-      sha256 "e7a5e48d912195bd0b7a1a8c146e6c2dcb48fc41991ee6030db77b4e24797afb"
+      url "https://github.com/daviddwlee84/exp-cli/releases/download/v0.1.1/exp-cli_0.1.1_linux_arm64.tar.gz"
+      sha256 "061a0cb3725265b6dbe7118abe9e4e3914f06f54c931863de17c032e0ce3c85b"
     end
     on_intel do
-      url "https://github.com/daviddwlee84/exp-cli/releases/download/v0.1.0/exp-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "5477b1abb32052cda634debc516546f2dd60f53486ea659864bba81bd3de7637"
+      url "https://github.com/daviddwlee84/exp-cli/releases/download/v0.1.1/exp-cli_0.1.1_linux_amd64.tar.gz"
+      sha256 "d0c18d45936d30a27c1d4803a3c8ab7c7fb1464cd7ea1fbc266aade91427ffc5"
     end
   end
 

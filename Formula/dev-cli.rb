@@ -10,23 +10,23 @@ class DevCli < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/daviddwlee84/dev-cli/releases/download/v0.2.40/dev-cli_v0.2.40_darwin_arm64.tar.gz"
-      sha256 "a57523cc59680a0a13ff9bebe8613da36a6844c88cab8cf7d81cc3e9dd04318d"
+      url "https://github.com/daviddwlee84/dev-cli/releases/download/v0.2.41/dev-cli_v0.2.41_darwin_arm64.tar.gz"
+      sha256 "41b5742c01bdc530e534d2d8564793bc4fbf3615e3614ef89224da9ef0882d65"
     end
     on_intel do
-      url "https://github.com/daviddwlee84/dev-cli/releases/download/v0.2.40/dev-cli_v0.2.40_darwin_amd64.tar.gz"
-      sha256 "256e5ca777f2b67dbde90dbe08f93f9519b048abc551eb6f44cbc2d23f7c6c31"
+      url "https://github.com/daviddwlee84/dev-cli/releases/download/v0.2.41/dev-cli_v0.2.41_darwin_amd64.tar.gz"
+      sha256 "dcdccb4537a8b602c9aeac31849fb369efa42d4b369ff07c92b57612a1b2d332"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/daviddwlee84/dev-cli/releases/download/v0.2.40/dev-cli_v0.2.40_linux_arm64.tar.gz"
-      sha256 "4a0c2fc355a5edac462ce4394cdaadb2c619d9f786a8891603a74eac2377e01c"
+      url "https://github.com/daviddwlee84/dev-cli/releases/download/v0.2.41/dev-cli_v0.2.41_linux_arm64.tar.gz"
+      sha256 "422b6edf3f7c2b42a2e63119c12047c221e25877d2b424598ac968a7c082d5ee"
     end
     on_intel do
-      url "https://github.com/daviddwlee84/dev-cli/releases/download/v0.2.40/dev-cli_v0.2.40_linux_amd64.tar.gz"
-      sha256 "3ff5a8b3aea1838d3db2cb837bca29297dbf5e0705b2f2091f30acd8caeb66da"
+      url "https://github.com/daviddwlee84/dev-cli/releases/download/v0.2.41/dev-cli_v0.2.41_linux_amd64.tar.gz"
+      sha256 "cad28adbc056794bf2026876326cadfe500cef90f86572f2e005d4f8527ca57a"
     end
   end
 
