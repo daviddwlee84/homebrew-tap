@@ -32,12 +32,13 @@ jobs:
         with:
           python-version: "3.12"
       - uses: Homebrew/actions/setup-homebrew@main
-      - name: Register this checkout as the test tap
+        with:
+          stable: true
+          token: ${{ github.token }}
+      - name: Verify the test tap points to this checkout
         run: |
           tap="$(brew --repository)/Library/Taps/daviddwlee84/homebrew-tap"
-          mkdir -p "$(dirname "$tap")"
-          test ! -e "$tap"
-          ln -s "$GITHUB_WORKSPACE" "$tap"
+          test "$(realpath "$tap")" = "$(realpath "$GITHUB_WORKSPACE")"
       - name: Test sync contracts
         run: python3 -m unittest discover -s tests -v
       - name: Validate and synchronize each release
