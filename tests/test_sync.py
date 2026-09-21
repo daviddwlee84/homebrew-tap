@@ -32,6 +32,37 @@ def fixture(tool=None, version='1.2.3'):
     return release, '\n'.join(sums) + '\n'
 
 
+class DownloadContracts(unittest.TestCase):
+    def test_transient_failure_retries_and_then_returns_content(self):
+        response = mock.MagicMock()
+        response.__enter__.return_value.read.return_value = b'archive bytes'
+        with mock.patch.object(sync.urllib.request, 'urlopen', side_effect=[
+            sync.urllib.error.URLError('temporary failure'), response,
+        ]) as request, mock.patch.object(sync.time, 'sleep') as sleep:
+            self.assertEqual(sync.fetch('https://github.com/owner/repo/releases/download/v1.0.0/asset'), b'archive bytes')
+        self.assertEqual(request.call_count, 2)
+        sleep.assert_called_once_with(2)
+
+    def test_network_retries_are_bounded_and_failure_propagates(self):
+        with mock.patch.object(sync.urllib.request, 'urlopen', side_effect=TimeoutError('timeout')) as request, \
+             mock.patch.object(sync.time, 'sleep') as sleep:
+            with self.assertRaises(TimeoutError):
+                sync.fetch('https://github.com/owner/repo/releases/download/v1.0.0/asset')
+        self.assertEqual(request.call_count, 3)
+        self.assertEqual(sleep.call_args_list, [mock.call(2), mock.call(4)])
+
+    def test_token_is_only_sent_to_github_api_not_public_assets(self):
+        response = mock.MagicMock()
+        response.__enter__.return_value.read.return_value = b'{}'
+        with mock.patch.dict(sync.os.environ, {'GH_TOKEN': 'test-token'}, clear=True), \
+             mock.patch.object(sync.urllib.request, 'urlopen', return_value=response) as request:
+            sync.fetch('https://api.github.com/repos/owner/repo/releases/latest')
+            sync.fetch('https://github.com/owner/repo/releases/download/v1.0.0/checksums.txt')
+        api_request, asset_request = [call.args[0] for call in request.call_args_list]
+        self.assertEqual(api_request.get_header('Authorization'), 'Bearer test-token')
+        self.assertIsNone(asset_request.get_header('Authorization'))
+
+
 class ReleaseContracts(unittest.TestCase):
     def test_registry_is_exactly_seven_distinct_formulas_and_binaries(self):
         self.assertEqual({t['formula'] for t in TOOLS}, {'dev-cli', 'translate', 'exp-cli', 'lazychezmoi', 'lazyclash', 'lazymlflow', 'lazypueue'})
@@ -160,6 +191,14 @@ class ArtifactContracts(unittest.TestCase):
             with self.assertRaises(ValueError):
                 sync.validate_binary(binary, target.replace(arch, 'arm64' if arch == 'amd64' else 'amd64'))
 
+    def test_downloaded_archive_checksum_mismatch_stops_before_unpack(self):
+        plan = sync.release_plan(TOOLS[0], *fixture())
+        with mock.patch.object(sync, 'fetch', return_value=b'corrupt archive'), \
+             mock.patch.object(sync, 'unpack_verified') as unpack:
+            with self.assertRaisesRegex(ValueError, 'size/checksum mismatch'):
+                sync.validate_assets(TOOLS[0], plan, self.root)
+        unpack.assert_not_called()
+
 
 class SynchronizationContracts(unittest.TestCase):
     def setUp(self):
@@ -201,6 +240,18 @@ class SynchronizationContracts(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'bootstrap'):
             self.invoke()
         self.assertEqual(self.formula.read_text(), 'existing')
+
+    def test_public_manifest_digest_mismatch_preserves_existing_formula(self):
+        self.formula.parent.mkdir()
+        self.formula.write_text('existing')
+        release, sums = fixture()
+        release['assets'][-1]['digest'] = 'sha256:' + '0' * 64
+        with mock.patch.object(sync, 'fetch', side_effect=[json.dumps(release).encode(), sums.encode()]):
+            with self.assertRaisesRegex(ValueError, 'manifest digest mismatch'):
+                self.invoke(bootstrap=True)
+        self.assertEqual(self.formula.read_text(), 'existing')
+        self.assertFalse(self.receipt.exists())
+        self.validate.assert_not_called()
 
     def test_smoke_failure_restores_old_formula_and_leaves_no_receipt(self):
         self.formula.parent.mkdir()
