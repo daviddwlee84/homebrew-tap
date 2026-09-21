@@ -84,6 +84,13 @@ class ReleaseContracts(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'same-tag'):
                 sync.guard_previous(plan, changed)
 
+    def test_replaced_checksum_manifest_is_not_a_same_version_noop(self):
+        plan = sync.release_plan(TOOLS[0], *fixture())
+        changed = copy.deepcopy(plan)
+        changed['checksum_asset_id'] += 1
+        with self.assertRaisesRegex(ValueError, 'same-tag'):
+            sync.guard_previous(plan, changed)
+
     def test_downgrade_is_rejected(self):
         old = sync.release_plan(TOOLS[0], *fixture(version='2.0.0'))
         new = sync.release_plan(TOOLS[0], *fixture())

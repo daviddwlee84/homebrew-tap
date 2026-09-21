@@ -80,7 +80,13 @@ def release_plan(tool, release, checksums):
             raise ValueError("API digest and checksum disagree: " + name)
         selected[target] = {"name": name, "url": expected_url, "sha256": sums[name],
                             "asset_id": asset["id"], "size": asset["size"]}
-    return {"version": tag[1:], "tag": tag, "release_id": release["id"], "assets": selected}
+    manifest = assets.get(tool["checksums"])
+    if not manifest:
+        raise ValueError("missing checksum manifest")
+    return {"version": tag[1:], "tag": tag, "release_id": release["id"],
+            "checksum_asset_id": manifest["id"],
+            "checksum_sha256": hashlib.sha256(checksums.encode("utf-8")).hexdigest(),
+            "assets": selected}
 
 
 def guard_previous(previous, plan):
