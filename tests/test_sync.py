@@ -74,6 +74,24 @@ class ReleaseContracts(unittest.TestCase):
             self.assertEqual(set(plan['assets']), set(sync.TARGETS))
             self.assertIn('_v1.2.3_' if tool['binary'] == 'dev' else '_1.2.3_', plan['assets']['linux_amd64']['name'])
 
+    def test_checksummed_source_asset_does_not_change_binary_selection(self):
+        for tool in TOOLS:
+            with self.subTest(tool=tool['formula']):
+                release, sums = fixture(tool)
+                version = 'v1.2.3' if tool['binary'] == 'dev' else '1.2.3'
+                source = f"{tool['formula']}_{version}_source.tar.gz"
+                release['assets'].append({
+                    'id': 91, 'name': source, 'size': 500,
+                    'browser_download_url': f"https://github.com/{tool['repo']}/releases/download/v1.2.3/{source}",
+                    'digest': 'sha256:' + 'a' * 64,
+                })
+                plan = sync.release_plan(tool, release, sums + 'a' * 64 + '  ' + source + '\n')
+                self.assertEqual(set(plan['assets']), set(sync.TARGETS))
+                self.assertNotIn(source, sync.render_formula(tool, plan))
+                release['assets'].pop(0)
+                with self.assertRaisesRegex(ValueError, 'missing release asset'):
+                    sync.release_plan(tool, release, sums + 'a' * 64 + '  ' + source + '\n')
+
     def test_missing_asset_and_checksum_fail_closed(self):
         for mutation in ('asset', 'checksum'):
             release, sums = fixture()
