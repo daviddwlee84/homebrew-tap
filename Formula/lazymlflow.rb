@@ -5,23 +5,23 @@ class Lazymlflow < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/daviddwlee84/lazymlflow/releases/download/v0.1.0/lazymlflow_0.1.0_darwin_arm64.tar.gz"
-      sha256 "7e66d9f9fcc8da839da76c4c3bf1fcbc5b2b7aa3e2c490b90683e5f30929ce07"
+      url "https://github.com/daviddwlee84/lazymlflow/releases/download/v0.2.0/lazymlflow_0.2.0_darwin_arm64.tar.gz"
+      sha256 "a435acbd216e934917994b43f3817529464888e56cf45e6711accb68069ba8aa"
     end
     on_intel do
-      url "https://github.com/daviddwlee84/lazymlflow/releases/download/v0.1.0/lazymlflow_0.1.0_darwin_amd64.tar.gz"
-      sha256 "04d9a194d6f7fdb01bd853bb1f4ffd41219cb3c8e606c38704cd1f610e8ce31b"
+      url "https://github.com/daviddwlee84/lazymlflow/releases/download/v0.2.0/lazymlflow_0.2.0_darwin_amd64.tar.gz"
+      sha256 "84975e4b477eb44377430e8054fafe1787a1fba01d3a7d59d4a85dbbdc60f0b2"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/daviddwlee84/lazymlflow/releases/download/v0.1.0/lazymlflow_0.1.0_linux_arm64.tar.gz"
-      sha256 "521afdd90d6887170a5f1099ba2b90d68616c6e164e857af63d621a35fca669b"
+      url "https://github.com/daviddwlee84/lazymlflow/releases/download/v0.2.0/lazymlflow_0.2.0_linux_arm64.tar.gz"
+      sha256 "8c44267990228afa0c7774c0e2eaaeef012df838c4a0652ba09b6c3b8ad34057"
     end
     on_intel do
-      url "https://github.com/daviddwlee84/lazymlflow/releases/download/v0.1.0/lazymlflow_0.1.0_linux_amd64.tar.gz"
-      sha256 "1c03b876c15ed4a8e4a1945ddbe2100dfeb6f7a1fb4b3754ef052537ca6ac6eb"
+      url "https://github.com/daviddwlee84/lazymlflow/releases/download/v0.2.0/lazymlflow_0.2.0_linux_amd64.tar.gz"
+      sha256 "dafa64fc93b224e9b89aab4186a4e08aa9cfb1bebe6acb9b5a53dab661833f81"
     end
   end
 

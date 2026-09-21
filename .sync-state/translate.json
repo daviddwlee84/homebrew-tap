@@ -1,37 +1,37 @@
 {
   "assets": {
     "darwin_amd64": {
-      "asset_id": 571782376,
-      "name": "translate_0.6.1_darwin_amd64.tar.gz",
-      "sha256": "a30b2976a028fb1b58ef00cced4d25bd8c16a5b52faf4c8142c4131f7085c9ca",
-      "size": 7270291,
-      "url": "https://github.com/daviddwlee84/translate/releases/download/v0.6.1/translate_0.6.1_darwin_amd64.tar.gz"
+      "asset_id": 579620677,
+      "name": "translate_0.6.2_darwin_amd64.tar.gz",
+      "sha256": "50f1e456e3d4e23b61b42ca48f026e1ac12529802b11dbcdb591fd5eaf08d3a1",
+      "size": 7271544,
+      "url": "https://github.com/daviddwlee84/translate/releases/download/v0.6.2/translate_0.6.2_darwin_amd64.tar.gz"
     },
     "darwin_arm64": {
-      "asset_id": 571782377,
-      "name": "translate_0.6.1_darwin_arm64.tar.gz",
-      "sha256": "6cc0524011c4936f6066f85f893a2beb73ee462477884b0869bbb36c4ca5c75e",
-      "size": 6950051,
-      "url": "https://github.com/daviddwlee84/translate/releases/download/v0.6.1/translate_0.6.1_darwin_arm64.tar.gz"
+      "asset_id": 579620720,
+      "name": "translate_0.6.2_darwin_arm64.tar.gz",
+      "sha256": "b9c1190d9c471c8110e37788d67f3c0df64c9c424099dc5fcf2205c13e7b4036",
+      "size": 6949778,
+      "url": "https://github.com/daviddwlee84/translate/releases/download/v0.6.2/translate_0.6.2_darwin_arm64.tar.gz"
     },
     "linux_amd64": {
-      "asset_id": 571782378,
-      "name": "translate_0.6.1_linux_amd64.tar.gz",
-      "sha256": "c1ebff59c82fccd5df1b9299796119618529fd4d8c5e08fb3e4498fad255f966",
-      "size": 7173327,
-      "url": "https://github.com/daviddwlee84/translate/releases/download/v0.6.1/translate_0.6.1_linux_amd64.tar.gz"
+      "asset_id": 579620757,
+      "name": "translate_0.6.2_linux_amd64.tar.gz",
+      "sha256": "8437164fe2ce4e2fd91e85b876ed770c3ced45b55196f5a53ad687ecd26f80a6",
+      "size": 7174212,
+      "url": "https://github.com/daviddwlee84/translate/releases/download/v0.6.2/translate_0.6.2_linux_amd64.tar.gz"
     },
     "linux_arm64": {
-      "asset_id": 571782407,
-      "name": "translate_0.6.1_linux_arm64.tar.gz",
-      "sha256": "41c38ea96bca52b460cc6b9a63f534752981225d64cd950182ac800db9f80736",
-      "size": 6701532,
-      "url": "https://github.com/daviddwlee84/translate/releases/download/v0.6.1/translate_0.6.1_linux_arm64.tar.gz"
+      "asset_id": 579620811,
+      "name": "translate_0.6.2_linux_arm64.tar.gz",
+      "sha256": "e34d38c1cf2ec1e61f35ecc330586c4cfaf21d98ecb5547e2cdb9b4ec61c4933",
+      "size": 6702331,
+      "url": "https://github.com/daviddwlee84/translate/releases/download/v0.6.2/translate_0.6.2_linux_arm64.tar.gz"
     }
   },
-  "checksum_asset_id": 571782410,
-  "checksum_sha256": "3f6ed7e9846e52fc3a53331fa18104a34325b7734879213aa58c4cc5b35ddb16",
-  "release_id": 391211994,
-  "tag": "v0.6.1",
-  "version": "0.6.1"
+  "checksum_asset_id": 579620628,
+  "checksum_sha256": "438d7695704c6c0c7a6a8b9be43e4b6f27c6cbf8fa548bb113d9b1255924612a",
+  "release_id": 393198833,
+  "tag": "v0.6.2",
+  "version": "0.6.2"
 }

@@ -5,23 +5,23 @@ class Lazypueue < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/daviddwlee84/lazypueue/releases/download/v0.1.0/lazypueue_0.1.0_darwin_arm64.tar.gz"
-      sha256 "88e1620a68a9c8acf26ecd453360f4332b826e1ded8b32d5476f2c3691acf989"
+      url "https://github.com/daviddwlee84/lazypueue/releases/download/v0.1.1/lazypueue_0.1.1_darwin_arm64.tar.gz"
+      sha256 "1a9d077e958cc6cc2c28a485d44bcb38c648c139193e2e6debd3bd0b44746644"
     end
     on_intel do
-      url "https://github.com/daviddwlee84/lazypueue/releases/download/v0.1.0/lazypueue_0.1.0_darwin_amd64.tar.gz"
-      sha256 "5e08161a8178ca2c075f32fd1893a5ff4f2a179e1bc556cf8a967dd94c29e97b"
+      url "https://github.com/daviddwlee84/lazypueue/releases/download/v0.1.1/lazypueue_0.1.1_darwin_amd64.tar.gz"
+      sha256 "d9d856213f46761695d359080cb12a96dd039e20b86249ac431762752df83cd3"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/daviddwlee84/lazypueue/releases/download/v0.1.0/lazypueue_0.1.0_linux_arm64.tar.gz"
-      sha256 "4397795710bbf3d8754dfc1ec9dcd2351222cb5e534eaa921de78dec4326b9ba"
+      url "https://github.com/daviddwlee84/lazypueue/releases/download/v0.1.1/lazypueue_0.1.1_linux_arm64.tar.gz"
+      sha256 "b464dfe47e3e3795b5e884287b3218d3531bba1c60717c24e22c499c59ad6285"
     end
     on_intel do
-      url "https://github.com/daviddwlee84/lazypueue/releases/download/v0.1.0/lazypueue_0.1.0_linux_amd64.tar.gz"
-      sha256 "f57ce08f24cc2c3f9835fa3290e3537371fe9ff12cde8c1ebc5df9dc4255d1de"
+      url "https://github.com/daviddwlee84/lazypueue/releases/download/v0.1.1/lazypueue_0.1.1_linux_amd64.tar.gz"
+      sha256 "6491ca403047e3952488a72e5e6579f6da2845aa85af189653cbe3da7019ba60"
     end
   end
 
