@@ -138,7 +138,8 @@ def render_formula(tool, plan):
     lines += [f'{indent}bin.install "{binary}"']
     if tool["bundled_completions"]:
         lines += [f'{indent}bash_completion.install "completions/{binary}.bash" => "{binary}"',
-                  f'{indent}zsh_completion.install "completions/{binary}.zsh" => "_{binary}"']
+                  f'{indent}zsh_completion.install "completions/{binary}.zsh" => "_{binary}"',
+                  f'{indent}fish_completion.install "completions/{binary}.fish" if File.exist?("completions/{binary}.fish")']
     if tool["head"]:
         lines += ["    end"]
     if not tool["bundled_completions"]:
