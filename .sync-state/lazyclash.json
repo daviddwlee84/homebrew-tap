@@ -1,0 +1,37 @@
+{
+  "assets": {
+    "darwin_amd64": {
+      "asset_id": 578471573,
+      "name": "lazyclash_0.1.8_darwin_amd64.tar.gz",
+      "sha256": "834603d84cb6dcd82cfa6c7568617772c681a187ad37904710eaace60835ef0b",
+      "size": 5587512,
+      "url": "https://github.com/daviddwlee84/lazyclash/releases/download/v0.1.8/lazyclash_0.1.8_darwin_amd64.tar.gz"
+    },
+    "darwin_arm64": {
+      "asset_id": 578471576,
+      "name": "lazyclash_0.1.8_darwin_arm64.tar.gz",
+      "sha256": "31cb7854554d4d376a7666512c03d15ad221f28940f7f1f5037a9b061f0648cd",
+      "size": 5253890,
+      "url": "https://github.com/daviddwlee84/lazyclash/releases/download/v0.1.8/lazyclash_0.1.8_darwin_arm64.tar.gz"
+    },
+    "linux_amd64": {
+      "asset_id": 578471575,
+      "name": "lazyclash_0.1.8_linux_amd64.tar.gz",
+      "sha256": "d42b79f6aa9d4509ac65f2883541b27d0feac5b2c8c21ff009c23cb5f62585bf",
+      "size": 5520347,
+      "url": "https://github.com/daviddwlee84/lazyclash/releases/download/v0.1.8/lazyclash_0.1.8_linux_amd64.tar.gz"
+    },
+    "linux_arm64": {
+      "asset_id": 578471577,
+      "name": "lazyclash_0.1.8_linux_arm64.tar.gz",
+      "sha256": "6ef37613cf1dbf985835a24d127556c3487052a3bff6a03f45af233f6b483290",
+      "size": 5076477,
+      "url": "https://github.com/daviddwlee84/lazyclash/releases/download/v0.1.8/lazyclash_0.1.8_linux_arm64.tar.gz"
+    }
+  },
+  "checksum_asset_id": 578471611,
+  "checksum_sha256": "508592bbdebee84cab858aed1b50aba8623f8416392d824f74949f4a3ae9f75e",
+  "release_id": 392752181,
+  "tag": "v0.1.8",
+  "version": "0.1.8"
+}
