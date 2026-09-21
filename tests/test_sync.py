@@ -105,6 +105,9 @@ class ReleaseContracts(unittest.TestCase):
             self.assertEqual('depends_on "go"' in rendered, tool['head'])
             if tool['head']:
                 self.assertIn('branch: "main"\n    depends_on "go" => :build', rendered)
+                self.assertLess(rendered.index('  head do'), rendered.index('  on_macos do'))
+            if tool['binary'] == 'dev':
+                self.assertEqual(rendered.count('generate_completions_from_executable'), 1)
 
 
 class ArtifactContracts(unittest.TestCase):
@@ -224,6 +227,7 @@ class SynchronizationContracts(unittest.TestCase):
         self.invoke(smoke=smoke)
         smoke.assert_called_once_with(TOOLS[0])
         self.assertEqual(json.loads(self.receipt.read_text()), self.plan)
+        self.assertEqual(self.formula.stat().st_mode & 0o777, 0o644)
 
 
 if __name__ == '__main__':

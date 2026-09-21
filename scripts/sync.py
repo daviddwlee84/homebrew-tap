@@ -113,6 +113,9 @@ def render_formula(tool, plan):
              f'  desc {json.dumps(tool["description"])}',
              f'  homepage "https://github.com/{tool["repo"]}"',
              f'  version "{plan["version"]}"', f'  license "{tool["license"]}"', ""]
+    if tool["head"]:
+        lines += ["  head do", f'    url "https://github.com/{tool["repo"]}.git", branch: "main"',
+                  '    depends_on "go" => :build', "  end", ""]
     for system, block in (("darwin", "on_macos"), ("linux", "on_linux")):
         lines.append(f"  {block} do")
         for arch, selector in (("arm64", "on_arm"), ("amd64", "on_intel")):
@@ -120,9 +123,6 @@ def render_formula(tool, plan):
             lines += [f"    {selector} do", f'      url "{asset["url"]}"',
                       f'      sha256 "{asset["sha256"]}"', "    end"]
         lines += ["  end", ""]
-    if tool["head"]:
-        lines += ["  head do", f'    url "https://github.com/{tool["repo"]}.git", branch: "main"',
-                  '    depends_on "go" => :build', "  end", ""]
     lines += ["  def install"]
     if tool["head"]:
         lines += ["    if build.head?"]
@@ -131,16 +131,18 @@ def render_formula(tool, plan):
                       '      system "go", "build", *std_go_args(output: bin/"dev", ldflags: ldflags), "./cmd/dev"']
         else:
             lines += ['      system "go", "build", *std_go_args(ldflags: "-s -w")']
-        lines += [f'      generate_completions_from_executable(bin/"{binary}", shell_parameter_format: :cobra)', "    else"]
+        if tool["bundled_completions"]:
+            lines += [f'      generate_completions_from_executable(bin/"{binary}", shell_parameter_format: :cobra)']
+        lines += ["    else"]
     indent = "      " if tool["head"] else "    "
     lines += [f'{indent}bin.install "{binary}"']
     if tool["bundled_completions"]:
         lines += [f'{indent}bash_completion.install "completions/{binary}.bash" => "{binary}"',
                   f'{indent}zsh_completion.install "completions/{binary}.zsh" => "_{binary}"']
-    else:
-        lines += [f'{indent}generate_completions_from_executable(bin/"{binary}", shell_parameter_format: :cobra)']
     if tool["head"]:
         lines += ["    end"]
+    if not tool["bundled_completions"]:
+        lines += [f'    generate_completions_from_executable(bin/"{binary}", shell_parameter_format: :cobra)']
     lines += ["  end", "", "  test do", f'    assert_match version.to_s, shell_output("#{{bin}}/{binary} --version")',
               f'    assert_match "Usage:", shell_output("#{{bin}}/{binary} --help")', "  end", "end", ""]
     return "\n".join(lines)
@@ -198,6 +200,7 @@ def atomic_write(path, content):
         staged = Path(output.name)
         output.write(content)
     try:
+        staged.chmod(0o644)
         staged.replace(path)
     finally:
         staged.unlink(missing_ok=True)
