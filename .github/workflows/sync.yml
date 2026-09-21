@@ -1,0 +1,73 @@
+name: Sync stable formulas
+
+on:
+  workflow_dispatch:
+    inputs:
+      tool:
+        description: Comma-separated formula names; leave empty to sync all seven tools
+        type: string
+        default: ""
+      bootstrap:
+        description: Initialize existing formulas after full asset and install validation
+        type: boolean
+        default: false
+  schedule:
+    - cron: "17 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stable-formula-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: Homebrew/actions/setup-homebrew@main
+      - name: Register this checkout as the test tap
+        run: |
+          tap="$(brew --repository)/Library/Taps/daviddwlee84/homebrew-tap"
+          mkdir -p "$(dirname "$tap")"
+          test ! -e "$tap"
+          ln -s "$GITHUB_WORKSPACE" "$tap"
+      - name: Test sync contracts
+        run: python3 -m unittest discover -s tests -v
+      - name: Validate and synchronize each release
+        id: sync
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SYNC_TOOL: ${{ inputs.tool }}
+          SYNC_BOOTSTRAP: ${{ inputs.bootstrap }}
+          HOMEBREW_NO_AUTO_UPDATE: "1"
+          HOMEBREW_NO_INSTALL_CLEANUP: "1"
+        shell: bash
+        run: |
+          args=(--write --brew-smoke)
+          if [[ -n "$SYNC_TOOL" ]]; then
+            IFS=, read -ra tools <<< "$SYNC_TOOL"
+            for tool in "${tools[@]}"; do args+=(--tool "$tool"); done
+          fi
+          if [[ "$SYNC_BOOTSTRAP" == true ]]; then args+=(--bootstrap); fi
+          python3 scripts/sync.py "${args[@]}"
+      - name: Commit only successfully validated formulas
+        if: always() && steps.sync.outcome != 'skipped'
+        run: |
+          mkdir -p .sync-state
+          git add -- Formula .sync-state
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git commit -m "Sync validated stable release formulas"
+          git push origin HEAD:main
+      - name: Report any failed tool
+        if: steps.sync.outcome == 'failure'
+        run: exit 1

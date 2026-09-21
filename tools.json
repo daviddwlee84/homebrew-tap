@@ -1,0 +1,79 @@
+[
+  {
+    "formula": "dev-cli",
+    "binary": "dev",
+    "repo": "daviddwlee84/dev-cli",
+    "description": "Task and worktree command center for multi-repository development",
+    "license": "MIT",
+    "archive": "dev-cli_{tag}_{os}_{arch}.tar.gz",
+    "checksums": "SHA256SUMS",
+    "bundled_completions": false,
+    "head": true
+  },
+  {
+    "formula": "translate",
+    "binary": "translate",
+    "repo": "daviddwlee84/translate",
+    "description": "Terminal translation tool with CLI and TUI",
+    "license": "MIT",
+    "archive": "translate_{version}_{os}_{arch}.tar.gz",
+    "checksums": "checksums.txt",
+    "bundled_completions": true,
+    "head": true
+  },
+  {
+    "formula": "exp-cli",
+    "binary": "exp",
+    "repo": "daviddwlee84/exp-cli",
+    "description": "Experiment tracking and workflow CLI",
+    "license": "MIT",
+    "archive": "exp-cli_{version}_{os}_{arch}.tar.gz",
+    "checksums": "checksums.txt",
+    "bundled_completions": true,
+    "head": false
+  },
+  {
+    "formula": "lazychezmoi",
+    "binary": "lazychezmoi",
+    "repo": "daviddwlee84/lazychezmoi",
+    "description": "Terminal interface for chezmoi dotfiles",
+    "license": "MIT",
+    "archive": "lazychezmoi_{version}_{os}_{arch}.tar.gz",
+    "checksums": "checksums.txt",
+    "bundled_completions": true,
+    "head": false
+  },
+  {
+    "formula": "lazyclash",
+    "binary": "lazyclash",
+    "repo": "daviddwlee84/lazyclash",
+    "description": "Terminal interface for Mihomo proxy cores",
+    "license": "MIT",
+    "archive": "lazyclash_{version}_{os}_{arch}.tar.gz",
+    "checksums": "checksums.txt",
+    "bundled_completions": true,
+    "head": false
+  },
+  {
+    "formula": "lazymlflow",
+    "binary": "lazymlflow",
+    "repo": "daviddwlee84/lazymlflow",
+    "description": "Terminal interface for MLflow experiments",
+    "license": "MIT",
+    "archive": "lazymlflow_{version}_{os}_{arch}.tar.gz",
+    "checksums": "checksums.txt",
+    "bundled_completions": true,
+    "head": false
+  },
+  {
+    "formula": "lazypueue",
+    "binary": "lazypueue",
+    "repo": "daviddwlee84/lazypueue",
+    "description": "Terminal interface for Pueue task queues",
+    "license": "MIT",
+    "archive": "lazypueue_{version}_{os}_{arch}.tar.gz",
+    "checksums": "checksums.txt",
+    "bundled_completions": true,
+    "head": false
+  }
+]
