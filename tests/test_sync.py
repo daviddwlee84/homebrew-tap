@@ -102,6 +102,7 @@ class ReleaseContracts(unittest.TestCase):
             rendered = sync.render_formula(tool, sync.release_plan(tool, *fixture(tool)))
             self.assertIn(f'bin.install "{tool["binary"]}"', rendered)
             self.assertNotIn('archive/refs/tags', rendered)
+            self.assertNotIn('  version "', rendered)
             self.assertEqual('depends_on "go"' in rendered, tool['head'])
             if tool['bundled_completions']:
                 self.assertIn('fish_completion.install', rendered)

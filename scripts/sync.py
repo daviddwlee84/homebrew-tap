@@ -112,7 +112,7 @@ def render_formula(tool, plan):
     lines = [f'class {formula_class(tool["formula"])} < Formula',
              f'  desc {json.dumps(tool["description"])}',
              f'  homepage "https://github.com/{tool["repo"]}"',
-             f'  version "{plan["version"]}"', f'  license "{tool["license"]}"', ""]
+             f'  license "{tool["license"]}"', ""]
     if tool["head"]:
         lines += ["  head do", f'    url "https://github.com/{tool["repo"]}.git", branch: "main"',
                   '    depends_on "go" => :build', "  end", ""]
