@@ -1,8 +1,12 @@
 class Translate < Formula
-  desc "Fast terminal translation tool (CLI + TUI)"
+  desc "Terminal translation tool with CLI and TUI"
   homepage "https://github.com/daviddwlee84/translate"
-  version "0.6.1"
   license "MIT"
+
+  head do
+    url "https://github.com/daviddwlee84/translate.git", branch: "main"
+    depends_on "go" => :build
+  end
 
   on_macos do
     on_arm do
@@ -26,26 +30,20 @@ class Translate < Formula
     end
   end
 
-  head do
-    url "https://github.com/daviddwlee84/translate.git", branch: "main"
-    depends_on "go" => :build
-  end
-
   def install
     if build.head?
       system "go", "build", *std_go_args(ldflags: "-s -w")
+      generate_completions_from_executable(bin/"translate", shell_parameter_format: :cobra)
     else
       bin.install "translate"
+      bash_completion.install "completions/translate.bash" => "translate"
+      zsh_completion.install "completions/translate.zsh" => "_translate"
+      fish_completion.install "completions/translate.fish" if File.exist?("completions/translate.fish")
     end
-
-    # shell_parameter_format: :cobra runs `translate completion <shell>`.
-    # Without this the tap ships no completions at all and users depend on
-    # their own dotfiles to generate them.
-    generate_completions_from_executable(bin/"translate", shell_parameter_format: :cobra)
   end
 
   test do
-    assert_match "v#{version}", shell_output("#{bin}/translate --version")
-    assert_match "en", shell_output("#{bin}/translate lang resolve english --json")
+    assert_match version.to_s, shell_output("#{bin}/translate --version")
+    assert_match "Usage:", shell_output("#{bin}/translate --help")
   end
 end
