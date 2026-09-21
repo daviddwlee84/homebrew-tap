@@ -1,0 +1,37 @@
+{
+  "assets": {
+    "darwin_amd64": {
+      "asset_id": 578545824,
+      "name": "exp-cli_0.1.0_darwin_amd64.tar.gz",
+      "sha256": "7954d98fdc938b18b1afbf278887adc5734ebac910059e38d6fad9524316f8db",
+      "size": 7730100,
+      "url": "https://github.com/daviddwlee84/exp-cli/releases/download/v0.1.0/exp-cli_0.1.0_darwin_amd64.tar.gz"
+    },
+    "darwin_arm64": {
+      "asset_id": 578545875,
+      "name": "exp-cli_0.1.0_darwin_arm64.tar.gz",
+      "sha256": "9d0ea7a19de0572209fb5590c2ed8b6a9c207a24a5aea2b43c8d67ca7c6b406a",
+      "size": 7074907,
+      "url": "https://github.com/daviddwlee84/exp-cli/releases/download/v0.1.0/exp-cli_0.1.0_darwin_arm64.tar.gz"
+    },
+    "linux_amd64": {
+      "asset_id": 578545915,
+      "name": "exp-cli_0.1.0_linux_amd64.tar.gz",
+      "sha256": "5477b1abb32052cda634debc516546f2dd60f53486ea659864bba81bd3de7637",
+      "size": 7682610,
+      "url": "https://github.com/daviddwlee84/exp-cli/releases/download/v0.1.0/exp-cli_0.1.0_linux_amd64.tar.gz"
+    },
+    "linux_arm64": {
+      "asset_id": 578545963,
+      "name": "exp-cli_0.1.0_linux_arm64.tar.gz",
+      "sha256": "e7a5e48d912195bd0b7a1a8c146e6c2dcb48fc41991ee6030db77b4e24797afb",
+      "size": 6890827,
+      "url": "https://github.com/daviddwlee84/exp-cli/releases/download/v0.1.0/exp-cli_0.1.0_linux_arm64.tar.gz"
+    }
+  },
+  "checksum_asset_id": 578545794,
+  "checksum_sha256": "1bf89357e80b7252915fb994f2c8cb6825185172263ac686b088b80760b15be5",
+  "release_id": 392773274,
+  "tag": "v0.1.0",
+  "version": "0.1.0"
+}
