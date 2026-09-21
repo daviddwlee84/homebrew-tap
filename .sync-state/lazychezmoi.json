@@ -1,0 +1,37 @@
+{
+  "assets": {
+    "darwin_amd64": {
+      "asset_id": 578581946,
+      "name": "lazychezmoi_0.1.0_darwin_amd64.tar.gz",
+      "sha256": "504ce1754f872dbe2c8a9325b591f6b947313abe3fda1dc195d4cf0810d08106",
+      "size": 3549010,
+      "url": "https://github.com/daviddwlee84/lazychezmoi/releases/download/v0.1.0/lazychezmoi_0.1.0_darwin_amd64.tar.gz"
+    },
+    "darwin_arm64": {
+      "asset_id": 578581983,
+      "name": "lazychezmoi_0.1.0_darwin_arm64.tar.gz",
+      "sha256": "f32dd45307fbfee123911f57a60d4e37316ed2bcc112faeba646ee1d5e4e54d9",
+      "size": 3358758,
+      "url": "https://github.com/daviddwlee84/lazychezmoi/releases/download/v0.1.0/lazychezmoi_0.1.0_darwin_arm64.tar.gz"
+    },
+    "linux_amd64": {
+      "asset_id": 578582016,
+      "name": "lazychezmoi_0.1.0_linux_amd64.tar.gz",
+      "sha256": "b0c2afc889f5acfafd74b6e6030f63abbc5508c08dddbe296a9e630927e8bab2",
+      "size": 3509121,
+      "url": "https://github.com/daviddwlee84/lazychezmoi/releases/download/v0.1.0/lazychezmoi_0.1.0_linux_amd64.tar.gz"
+    },
+    "linux_arm64": {
+      "asset_id": 578582051,
+      "name": "lazychezmoi_0.1.0_linux_arm64.tar.gz",
+      "sha256": "7dc0cb6575aa3b19b960e23c61019c1c0e97f71897090055a7245f734458d5a3",
+      "size": 3237900,
+      "url": "https://github.com/daviddwlee84/lazychezmoi/releases/download/v0.1.0/lazychezmoi_0.1.0_linux_arm64.tar.gz"
+    }
+  },
+  "checksum_asset_id": 578581914,
+  "checksum_sha256": "33af1125de07de2e7afc935ba4554ed3265cd1a7259566a7a5f73da2d0cc4964",
+  "release_id": 392786892,
+  "tag": "v0.1.0",
+  "version": "0.1.0"
+}
