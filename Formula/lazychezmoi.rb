@@ -5,23 +5,23 @@ class Lazychezmoi < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/daviddwlee84/lazychezmoi/releases/download/v0.1.1/lazychezmoi_0.1.1_darwin_arm64.tar.gz"
-      sha256 "8f94cb479bdad81c2e5bdff811165a2ff831d899abb51e8b348b4640cfdfaa9c"
+      url "https://github.com/daviddwlee84/lazychezmoi/releases/download/v0.1.2/lazychezmoi_0.1.2_darwin_arm64.tar.gz"
+      sha256 "40602980424417e3ff353a811ead012916e7174a179071d7d767b3508cffdbda"
     end
     on_intel do
-      url "https://github.com/daviddwlee84/lazychezmoi/releases/download/v0.1.1/lazychezmoi_0.1.1_darwin_amd64.tar.gz"
-      sha256 "91b4289b03f86f8bb8f424921ab70027c2409549bee6592f2143ed4eb37d5560"
+      url "https://github.com/daviddwlee84/lazychezmoi/releases/download/v0.1.2/lazychezmoi_0.1.2_darwin_amd64.tar.gz"
+      sha256 "8507a4aafa4c71a6dc3f7d504a4988f3076a460908932a1f479c6015f1725f5b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/daviddwlee84/lazychezmoi/releases/download/v0.1.1/lazychezmoi_0.1.1_linux_arm64.tar.gz"
-      sha256 "2da6ef6f8e871dba04c727124401465324c8e192ca3f353cf754ff7ba37048e5"
+      url "https://github.com/daviddwlee84/lazychezmoi/releases/download/v0.1.2/lazychezmoi_0.1.2_linux_arm64.tar.gz"
+      sha256 "37f5f8fc113da5406e1cb4fd31a1b94dd0f376fc59722ae45bb45cbfcbf0541d"
     end
     on_intel do
-      url "https://github.com/daviddwlee84/lazychezmoi/releases/download/v0.1.1/lazychezmoi_0.1.1_linux_amd64.tar.gz"
-      sha256 "e07836b43a7952cc71f66cb60d88b07c6b445b54d22e2f138571fcd69497a91a"
+      url "https://github.com/daviddwlee84/lazychezmoi/releases/download/v0.1.2/lazychezmoi_0.1.2_linux_amd64.tar.gz"
+      sha256 "445af34d627cc5cfc8a7aef2efc91e92e55c2aff64516ac2cea059601c047725"
     end
   end
 
