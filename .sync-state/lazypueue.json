@@ -1,37 +1,37 @@
 {
   "assets": {
     "darwin_amd64": {
-      "asset_id": 581950562,
-      "name": "lazypueue_0.1.2_darwin_amd64.tar.gz",
-      "sha256": "2471a9688f23fab8f39a09b1b67e172701ec7469305a5aee4b1ced8144029289",
-      "size": 5279389,
-      "url": "https://github.com/daviddwlee84/lazypueue/releases/download/v0.1.2/lazypueue_0.1.2_darwin_amd64.tar.gz"
+      "asset_id": 583949899,
+      "name": "lazypueue_0.2.0_darwin_amd64.tar.gz",
+      "sha256": "0c80a97e672464a8bea99cc5f1351086297cd541ea977ec649f6bb39c8303055",
+      "size": 5316834,
+      "url": "https://github.com/daviddwlee84/lazypueue/releases/download/v0.2.0/lazypueue_0.2.0_darwin_amd64.tar.gz"
     },
     "darwin_arm64": {
-      "asset_id": 581950585,
-      "name": "lazypueue_0.1.2_darwin_arm64.tar.gz",
-      "sha256": "ee962c650202338cd2684a3b95c84271e268aef70659ed70bfc464eed47931c7",
-      "size": 4906441,
-      "url": "https://github.com/daviddwlee84/lazypueue/releases/download/v0.1.2/lazypueue_0.1.2_darwin_arm64.tar.gz"
+      "asset_id": 583949927,
+      "name": "lazypueue_0.2.0_darwin_arm64.tar.gz",
+      "sha256": "1145a136e00885bfb962efadf8774b9d25b42572f9507a8e3e766d3004df5510",
+      "size": 4942720,
+      "url": "https://github.com/daviddwlee84/lazypueue/releases/download/v0.2.0/lazypueue_0.2.0_darwin_arm64.tar.gz"
     },
     "linux_amd64": {
-      "asset_id": 581950657,
-      "name": "lazypueue_0.1.2_linux_amd64.tar.gz",
-      "sha256": "e7ea82e85d51b2c17be8747f43e19d5fafad32e0b5b3a1d31761f4156f7d0d45",
-      "size": 5211599,
-      "url": "https://github.com/daviddwlee84/lazypueue/releases/download/v0.1.2/lazypueue_0.1.2_linux_amd64.tar.gz"
+      "asset_id": 583949953,
+      "name": "lazypueue_0.2.0_linux_amd64.tar.gz",
+      "sha256": "87b6add72f72921403278391eec6809af58d9c099a5ac6e39014c7ed06de388e",
+      "size": 5254294,
+      "url": "https://github.com/daviddwlee84/lazypueue/releases/download/v0.2.0/lazypueue_0.2.0_linux_amd64.tar.gz"
     },
     "linux_arm64": {
-      "asset_id": 581950687,
-      "name": "lazypueue_0.1.2_linux_arm64.tar.gz",
-      "sha256": "4228d2ff5b05795d5b74495c270247c571f01e90af004eee5ce9d34b18e509e9",
-      "size": 4731950,
-      "url": "https://github.com/daviddwlee84/lazypueue/releases/download/v0.1.2/lazypueue_0.1.2_linux_arm64.tar.gz"
+      "asset_id": 583949988,
+      "name": "lazypueue_0.2.0_linux_arm64.tar.gz",
+      "sha256": "20d7c678ae559e083d78a8dabc04e1fc9804fc52e83e68a844092cde8a36b0dd",
+      "size": 4768781,
+      "url": "https://github.com/daviddwlee84/lazypueue/releases/download/v0.2.0/lazypueue_0.2.0_linux_arm64.tar.gz"
     }
   },
-  "checksum_asset_id": 581950541,
-  "checksum_sha256": "e8bfb8256bfa814c99ba38cce35e1b824b8750debe4693a7cdc9fe417f7e55b6",
-  "release_id": 393998058,
-  "tag": "v0.1.2",
-  "version": "0.1.2"
+  "checksum_asset_id": 583949875,
+  "checksum_sha256": "be9660ca13bf784e55eec5ad0fe403962a8b612ce58c9a448b4e8fa25544b8b2",
+  "release_id": 394751591,
+  "tag": "v0.2.0",
+  "version": "0.2.0"
 }
