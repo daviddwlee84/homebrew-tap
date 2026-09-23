@@ -5,23 +5,23 @@ class Lazyclash < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/daviddwlee84/lazyclash/releases/download/v0.1.12/lazyclash_0.1.12_darwin_arm64.tar.gz"
-      sha256 "a39b686161a2f035f0c82f72a8760bf123425685cf6f440cff1eb828ec35a03d"
+      url "https://github.com/daviddwlee84/lazyclash/releases/download/v0.2.0/lazyclash_0.2.0_darwin_arm64.tar.gz"
+      sha256 "2a8752471067b085871037e1159d60ba103ebf786bbb744bca15a1905cb7581e"
     end
     on_intel do
-      url "https://github.com/daviddwlee84/lazyclash/releases/download/v0.1.12/lazyclash_0.1.12_darwin_amd64.tar.gz"
-      sha256 "df2e9b2a4875137c392e0d8d5d71b9594b4ef3146db18e90e2c75d176942e29b"
+      url "https://github.com/daviddwlee84/lazyclash/releases/download/v0.2.0/lazyclash_0.2.0_darwin_amd64.tar.gz"
+      sha256 "1247c0e3918b62bd9a6402c4af30491fcf7827704d8243156fca3840243dfd2b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/daviddwlee84/lazyclash/releases/download/v0.1.12/lazyclash_0.1.12_linux_arm64.tar.gz"
-      sha256 "403f04bdfadbb81c77b2225ee57a9d0f1dff67967ca7098c1264cc8d61af19d1"
+      url "https://github.com/daviddwlee84/lazyclash/releases/download/v0.2.0/lazyclash_0.2.0_linux_arm64.tar.gz"
+      sha256 "4b28903a29977f031b336aef24187a3679a394cfc306f016ec2c461f033b0cbd"
     end
     on_intel do
-      url "https://github.com/daviddwlee84/lazyclash/releases/download/v0.1.12/lazyclash_0.1.12_linux_amd64.tar.gz"
-      sha256 "7a19ab72e88a24ccc71b303f9beb449d986d1b0b7fbcbe5b6fdf529b8d6b6dc1"
+      url "https://github.com/daviddwlee84/lazyclash/releases/download/v0.2.0/lazyclash_0.2.0_linux_amd64.tar.gz"
+      sha256 "5381641dbfa2983a280310f6fb08450eb6148b4a3575f5ffd48db094adf1c687"
     end
   end
 
