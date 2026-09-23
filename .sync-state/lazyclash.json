@@ -1,37 +1,37 @@
 {
   "assets": {
     "darwin_amd64": {
-      "asset_id": 581965458,
-      "name": "lazyclash_0.1.11_darwin_amd64.tar.gz",
-      "sha256": "b73ffd6bbfa4155f29d1a20e46d08788466fd1ac297b582096ab4893acd9cca6",
-      "size": 8750113,
-      "url": "https://github.com/daviddwlee84/lazyclash/releases/download/v0.1.11/lazyclash_0.1.11_darwin_amd64.tar.gz"
+      "asset_id": 583127401,
+      "name": "lazyclash_0.1.12_darwin_amd64.tar.gz",
+      "sha256": "df2e9b2a4875137c392e0d8d5d71b9594b4ef3146db18e90e2c75d176942e29b",
+      "size": 8885197,
+      "url": "https://github.com/daviddwlee84/lazyclash/releases/download/v0.1.12/lazyclash_0.1.12_darwin_amd64.tar.gz"
     },
     "darwin_arm64": {
-      "asset_id": 581965488,
-      "name": "lazyclash_0.1.11_darwin_arm64.tar.gz",
-      "sha256": "d7318257a642c386eb04916eca9b5609c2e8bf3915cbfdf7f05e2266a00992a4",
-      "size": 8358320,
-      "url": "https://github.com/daviddwlee84/lazyclash/releases/download/v0.1.11/lazyclash_0.1.11_darwin_arm64.tar.gz"
+      "asset_id": 583127466,
+      "name": "lazyclash_0.1.12_darwin_arm64.tar.gz",
+      "sha256": "a39b686161a2f035f0c82f72a8760bf123425685cf6f440cff1eb828ec35a03d",
+      "size": 8483364,
+      "url": "https://github.com/daviddwlee84/lazyclash/releases/download/v0.1.12/lazyclash_0.1.12_darwin_arm64.tar.gz"
     },
     "linux_amd64": {
-      "asset_id": 581965518,
-      "name": "lazyclash_0.1.11_linux_amd64.tar.gz",
-      "sha256": "47a0f39b74bd836b28c6c26e0f794c8c9142b2f5bbce515323eaeefa35356fbc",
-      "size": 8719701,
-      "url": "https://github.com/daviddwlee84/lazyclash/releases/download/v0.1.11/lazyclash_0.1.11_linux_amd64.tar.gz"
+      "asset_id": 583127517,
+      "name": "lazyclash_0.1.12_linux_amd64.tar.gz",
+      "sha256": "7a19ab72e88a24ccc71b303f9beb449d986d1b0b7fbcbe5b6fdf529b8d6b6dc1",
+      "size": 8855253,
+      "url": "https://github.com/daviddwlee84/lazyclash/releases/download/v0.1.12/lazyclash_0.1.12_linux_amd64.tar.gz"
     },
     "linux_arm64": {
-      "asset_id": 581965586,
-      "name": "lazyclash_0.1.11_linux_arm64.tar.gz",
-      "sha256": "ace18deb3b734c5e1bf26241dd76264dc9b58eb584b56b78e0bbb71771561e57",
-      "size": 8153485,
-      "url": "https://github.com/daviddwlee84/lazyclash/releases/download/v0.1.11/lazyclash_0.1.11_linux_arm64.tar.gz"
+      "asset_id": 583127556,
+      "name": "lazyclash_0.1.12_linux_arm64.tar.gz",
+      "sha256": "403f04bdfadbb81c77b2225ee57a9d0f1dff67967ca7098c1264cc8d61af19d1",
+      "size": 8280326,
+      "url": "https://github.com/daviddwlee84/lazyclash/releases/download/v0.1.12/lazyclash_0.1.12_linux_arm64.tar.gz"
     }
   },
-  "checksum_asset_id": 581965435,
-  "checksum_sha256": "f5615e69d2f5cbf192fc882b85877ba614dc6f1832bf438b3de79a515f5bcb8f",
-  "release_id": 394003885,
-  "tag": "v0.1.11",
-  "version": "0.1.11"
+  "checksum_asset_id": 583127357,
+  "checksum_sha256": "d9f838fef3eaec4b67c4ca9ed314c901d4f38210d843ac0e80d35f2b6ec5a231",
+  "release_id": 394342801,
+  "tag": "v0.1.12",
+  "version": "0.1.12"
 }
