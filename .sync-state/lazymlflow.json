@@ -1,37 +1,37 @@
 {
   "assets": {
     "darwin_amd64": {
-      "asset_id": 583959764,
-      "name": "lazymlflow_0.3.0_darwin_amd64.tar.gz",
-      "sha256": "216d2424172e807db3770a3b4802d1dbce02f8230442a967ee5a5d2b2e2e8c1a",
-      "size": 7837543,
-      "url": "https://github.com/daviddwlee84/lazymlflow/releases/download/v0.3.0/lazymlflow_0.3.0_darwin_amd64.tar.gz"
+      "asset_id": 586642208,
+      "name": "lazymlflow_0.3.1_darwin_amd64.tar.gz",
+      "sha256": "f3d0898eda7ed51e2b2a965c152b743ca1c9fed5a0d5ef222e166058074e6fce",
+      "size": 8065528,
+      "url": "https://github.com/daviddwlee84/lazymlflow/releases/download/v0.3.1/lazymlflow_0.3.1_darwin_amd64.tar.gz"
     },
     "darwin_arm64": {
-      "asset_id": 583959788,
-      "name": "lazymlflow_0.3.0_darwin_arm64.tar.gz",
-      "sha256": "2266edb9d599a6c65ed4388b0685a0c8deee300e6a85c7b9f84257da47e43157",
-      "size": 7417232,
-      "url": "https://github.com/daviddwlee84/lazymlflow/releases/download/v0.3.0/lazymlflow_0.3.0_darwin_arm64.tar.gz"
+      "asset_id": 586642248,
+      "name": "lazymlflow_0.3.1_darwin_arm64.tar.gz",
+      "sha256": "5def4f69b838d3002fd8fb471361f5282f520aa64201694f055b85e5820da07d",
+      "size": 7631930,
+      "url": "https://github.com/daviddwlee84/lazymlflow/releases/download/v0.3.1/lazymlflow_0.3.1_darwin_arm64.tar.gz"
     },
     "linux_amd64": {
-      "asset_id": 583959843,
-      "name": "lazymlflow_0.3.0_linux_amd64.tar.gz",
-      "sha256": "275fa0b0ff5a166d82f85fb7775423dc108ca70ca2100cf0b64ba5b693baefd5",
-      "size": 7795916,
-      "url": "https://github.com/daviddwlee84/lazymlflow/releases/download/v0.3.0/lazymlflow_0.3.0_linux_amd64.tar.gz"
+      "asset_id": 586642281,
+      "name": "lazymlflow_0.3.1_linux_amd64.tar.gz",
+      "sha256": "775d95ce723a974db7ab868223250d34e9a8b49c1ec6513b0f37ae5c18f4808f",
+      "size": 8020291,
+      "url": "https://github.com/daviddwlee84/lazymlflow/releases/download/v0.3.1/lazymlflow_0.3.1_linux_amd64.tar.gz"
     },
     "linux_arm64": {
-      "asset_id": 583959877,
-      "name": "lazymlflow_0.3.0_linux_arm64.tar.gz",
-      "sha256": "bead00d5b930209d29b7d03dfa2c0b82d58ba2e323ef9942c951b9bd41dcae07",
-      "size": 7221140,
-      "url": "https://github.com/daviddwlee84/lazymlflow/releases/download/v0.3.0/lazymlflow_0.3.0_linux_arm64.tar.gz"
+      "asset_id": 586642341,
+      "name": "lazymlflow_0.3.1_linux_arm64.tar.gz",
+      "sha256": "810fb26c0cfef6cd0256c47f32803510f9416baec0002df75d3e211e552523c5",
+      "size": 7428958,
+      "url": "https://github.com/daviddwlee84/lazymlflow/releases/download/v0.3.1/lazymlflow_0.3.1_linux_arm64.tar.gz"
     }
   },
-  "checksum_asset_id": 583959744,
-  "checksum_sha256": "7a83396d10bb1baee40e4ec9407369b5ab3d23c71a354ff6829453cbba03336b",
-  "release_id": 394756709,
-  "tag": "v0.3.0",
-  "version": "0.3.0"
+  "checksum_asset_id": 586642169,
+  "checksum_sha256": "0f8991b37a616648062d7d929d5bd2567c63358aba4078b23bf921109fb47af1",
+  "release_id": 396000673,
+  "tag": "v0.3.1",
+  "version": "0.3.1"
 }
