@@ -1,37 +1,37 @@
 {
   "assets": {
     "darwin_amd64": {
-      "asset_id": 586444535,
-      "name": "dev-cli_v0.3.2_darwin_amd64.tar.gz",
-      "sha256": "0e4fba8f3641db84dd0225201bdf300d9e6573dc557433671eaedf289291d962",
-      "size": 12899432,
-      "url": "https://github.com/daviddwlee84/dev-cli/releases/download/v0.3.2/dev-cli_v0.3.2_darwin_amd64.tar.gz"
+      "asset_id": 586840786,
+      "name": "dev-cli_v0.3.3_darwin_amd64.tar.gz",
+      "sha256": "1e6b93c09ada3aa1581fde5ebc0b2777f7a6d46d0ca90d25e676eefa82a3ae62",
+      "size": 13097201,
+      "url": "https://github.com/daviddwlee84/dev-cli/releases/download/v0.3.3/dev-cli_v0.3.3_darwin_amd64.tar.gz"
     },
     "darwin_arm64": {
-      "asset_id": 586444591,
-      "name": "dev-cli_v0.3.2_darwin_arm64.tar.gz",
-      "sha256": "9d25bb9a57fa26e7961e4321a087a6c7a9b54359e15bdffa1cac1f841a02dc96",
-      "size": 12209746,
-      "url": "https://github.com/daviddwlee84/dev-cli/releases/download/v0.3.2/dev-cli_v0.3.2_darwin_arm64.tar.gz"
+      "asset_id": 586840821,
+      "name": "dev-cli_v0.3.3_darwin_arm64.tar.gz",
+      "sha256": "cdd3529813b0cc1e56571be4c2456aa5f1f354cd202446f8d811505e0a2f0903",
+      "size": 12402596,
+      "url": "https://github.com/daviddwlee84/dev-cli/releases/download/v0.3.3/dev-cli_v0.3.3_darwin_arm64.tar.gz"
     },
     "linux_amd64": {
-      "asset_id": 586444631,
-      "name": "dev-cli_v0.3.2_linux_amd64.tar.gz",
-      "sha256": "26bf1b16a8bac461aea8349ce25b03983fc3d60ce3917b4768d19365f76460cb",
-      "size": 12853365,
-      "url": "https://github.com/daviddwlee84/dev-cli/releases/download/v0.3.2/dev-cli_v0.3.2_linux_amd64.tar.gz"
+      "asset_id": 586840854,
+      "name": "dev-cli_v0.3.3_linux_amd64.tar.gz",
+      "sha256": "ead787e33bfd670a9caeed197bf1da580e6ec5232db5610ce1988a08c4e7fd74",
+      "size": 13052567,
+      "url": "https://github.com/daviddwlee84/dev-cli/releases/download/v0.3.3/dev-cli_v0.3.3_linux_amd64.tar.gz"
     },
     "linux_arm64": {
-      "asset_id": 586444662,
-      "name": "dev-cli_v0.3.2_linux_arm64.tar.gz",
-      "sha256": "b53f27127257f52a3357493f3143372df77e7abca68427ad8e4c0c581eec094a",
-      "size": 11832994,
-      "url": "https://github.com/daviddwlee84/dev-cli/releases/download/v0.3.2/dev-cli_v0.3.2_linux_arm64.tar.gz"
+      "asset_id": 586840900,
+      "name": "dev-cli_v0.3.3_linux_arm64.tar.gz",
+      "sha256": "4868eb126037bfe9ca998e922a58bb631c298388603caf1181d3289080a4ac45",
+      "size": 12017408,
+      "url": "https://github.com/daviddwlee84/dev-cli/releases/download/v0.3.3/dev-cli_v0.3.3_linux_arm64.tar.gz"
     }
   },
-  "checksum_asset_id": 586444464,
-  "checksum_sha256": "f8005a8d0dd1c5321ecb5d35629dfe188b8b3c99aaddf82bd8dd1acc41840490",
-  "release_id": 395910332,
-  "tag": "v0.3.2",
-  "version": "0.3.2"
+  "checksum_asset_id": 586840725,
+  "checksum_sha256": "6193aa33a4d6e4934750cf87c372d6e7e179a50c61933c8fa1b930360eafa26d",
+  "release_id": 396079817,
+  "tag": "v0.3.3",
+  "version": "0.3.3"
 }
