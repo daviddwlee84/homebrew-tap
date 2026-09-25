@@ -64,9 +64,9 @@ class DownloadContracts(unittest.TestCase):
 
 
 class ReleaseContracts(unittest.TestCase):
-    def test_registry_is_exactly_seven_distinct_formulas_and_binaries(self):
-        self.assertEqual({t['formula'] for t in TOOLS}, {'dev-cli', 'translate', 'exp-cli', 'lazychezmoi', 'lazyclash', 'lazymlflow', 'lazypueue'})
-        self.assertEqual(len({t['binary'] for t in TOOLS}), 7)
+    def test_registry_is_exactly_thirteen_distinct_formulas_and_binaries(self):
+        self.assertEqual({t['formula'] for t in TOOLS}, {'dev-cli', 'translate', 'exp-cli', 'lazychezmoi', 'lazyclash', 'lazymlflow', 'lazypueue', 'lazyansible', 'lazycrontab', 'lazyfind', 'lazypkg', 'lazymermaid', 'lazyset'})
+        self.assertEqual(len({t['binary'] for t in TOOLS}), 13)
 
     def test_all_archive_conventions_and_four_platforms(self):
         for tool in TOOLS:
