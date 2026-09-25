@@ -1,6 +1,6 @@
 # homebrew-tap
 
-Prebuilt Homebrew formulas for seven personal CLI/TUI tools:
+Prebuilt Homebrew formulas for thirteen personal CLI/TUI tools:
 
 ```sh
 brew install daviddwlee84/tap/dev-cli
@@ -10,6 +10,12 @@ brew install daviddwlee84/tap/lazychezmoi
 brew install daviddwlee84/tap/lazyclash
 brew install daviddwlee84/tap/lazymlflow
 brew install daviddwlee84/tap/lazypueue
+brew install daviddwlee84/tap/lazyansible
+brew install daviddwlee84/tap/lazycrontab
+brew install daviddwlee84/tap/lazyfind
+brew install daviddwlee84/tap/lazypkg
+brew install daviddwlee84/tap/lazymermaid
+brew install daviddwlee84/tap/lazyset
 ```
 
 `dev-cli` installs `dev`; `exp-cli` installs `exp`. Stable formulas install
@@ -29,7 +35,7 @@ manual dispatch. Its own repository-scoped `GITHUB_TOKEN` reads public releases
 and commits successful updates. No cross-repository token is needed.
 
 ```sh
-# All seven tools:
+# All thirteen tools:
 gh workflow run sync.yml --repo daviddwlee84/homebrew-tap
 # Select one formula:
 gh workflow run sync.yml --repo daviddwlee84/homebrew-tap -f tool=dev-cli
@@ -69,5 +75,5 @@ Writing requires `--write --brew-smoke` with this checkout registered as the tap
 Use the workflow for that operation so installing formula candidates cannot
 replace tools on a developer's machine. Release artifacts use the existing
 `dev-cli_vVERSION_OS_ARCH.tar.gz`/`SHA256SUMS` and
-`translate_VERSION_OS_ARCH.tar.gz`/`checksums.txt` layouts; the five newer tools
+`translate_VERSION_OS_ARCH.tar.gz`/`checksums.txt` layouts; the newer tools
 use `REPO_VERSION_OS_ARCH.tar.gz` and `checksums.txt`.

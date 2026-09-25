@@ -75,5 +75,71 @@
     "checksums": "checksums.txt",
     "bundled_completions": true,
     "head": false
+  },
+  {
+    "formula": "lazyansible",
+    "binary": "lazyansible",
+    "repo": "daviddwlee84/lazyansible",
+    "description": "Personal Ansible inventory and playbook workspace",
+    "license": "MIT",
+    "archive": "lazyansible_{version}_{os}_{arch}.tar.gz",
+    "checksums": "checksums.txt",
+    "bundled_completions": true,
+    "head": false
+  },
+  {
+    "formula": "lazycrontab",
+    "binary": "lazycrontab",
+    "repo": "daviddwlee84/lazycrontab",
+    "description": "Local and SSH cron inspection and schedule editing",
+    "license": "MIT",
+    "archive": "lazycrontab_{version}_{os}_{arch}.tar.gz",
+    "checksums": "checksums.txt",
+    "bundled_completions": true,
+    "head": false
+  },
+  {
+    "formula": "lazyfind",
+    "binary": "lazyfind",
+    "repo": "daviddwlee84/lazyfind",
+    "description": "File and text search workspace for local and SSH roots",
+    "license": "MIT",
+    "archive": "lazyfind_{version}_{os}_{arch}.tar.gz",
+    "checksums": "checksums.txt",
+    "bundled_completions": true,
+    "head": false
+  },
+  {
+    "formula": "lazypkg",
+    "binary": "lazypkg",
+    "repo": "daviddwlee84/lazypkg",
+    "description": "Software inventory and reviewed package-manager operations",
+    "license": "MIT",
+    "archive": "lazypkg_{version}_{os}_{arch}.tar.gz",
+    "checksums": "checksums.txt",
+    "bundled_completions": true,
+    "head": false
+  },
+  {
+    "formula": "lazymermaid",
+    "binary": "lazymermaid",
+    "repo": "daviddwlee84/lazymermaid",
+    "description": "Repository Mermaid workbench with local editing and rendering",
+    "license": "MIT",
+    "archive": "lazymermaid_{version}_{os}_{arch}.tar.gz",
+    "checksums": "checksums.txt",
+    "bundled_completions": true,
+    "head": false
+  },
+  {
+    "formula": "lazyset",
+    "binary": "lazyset",
+    "repo": "daviddwlee84/lazyset",
+    "description": "TUI catalog and workspace with retained terminal sessions",
+    "license": "MIT",
+    "archive": "lazyset_{version}_{os}_{arch}.tar.gz",
+    "checksums": "checksums.txt",
+    "bundled_completions": true,
+    "head": false
   }
 ]
