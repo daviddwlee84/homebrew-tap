@@ -1,0 +1,37 @@
+{
+  "assets": {
+    "darwin_amd64": {
+      "asset_id": 587583350,
+      "name": "lazypkg_0.1.4_darwin_amd64.tar.gz",
+      "sha256": "efed634908522f01ba392fdde7936037c3754f758c9e3e5ea7147a2c3ecd2425",
+      "size": 4554867,
+      "url": "https://github.com/daviddwlee84/lazypkg/releases/download/v0.1.4/lazypkg_0.1.4_darwin_amd64.tar.gz"
+    },
+    "darwin_arm64": {
+      "asset_id": 587583398,
+      "name": "lazypkg_0.1.4_darwin_arm64.tar.gz",
+      "sha256": "e4b4ced7235987e138f210b4d58d87c38b5b6e478e349c63244d1d1f8a4d16d3",
+      "size": 4230666,
+      "url": "https://github.com/daviddwlee84/lazypkg/releases/download/v0.1.4/lazypkg_0.1.4_darwin_arm64.tar.gz"
+    },
+    "linux_amd64": {
+      "asset_id": 587583421,
+      "name": "lazypkg_0.1.4_linux_amd64.tar.gz",
+      "sha256": "a6efbe9a415856bfd42d48b08a17d409955106e76289e073d28ea668c9e82590",
+      "size": 4499171,
+      "url": "https://github.com/daviddwlee84/lazypkg/releases/download/v0.1.4/lazypkg_0.1.4_linux_amd64.tar.gz"
+    },
+    "linux_arm64": {
+      "asset_id": 587583464,
+      "name": "lazypkg_0.1.4_linux_arm64.tar.gz",
+      "sha256": "b70902b9cbc6a25d08434cb3546fb0381cc6622de5772f2e0fc98e7015c0dc65",
+      "size": 4083599,
+      "url": "https://github.com/daviddwlee84/lazypkg/releases/download/v0.1.4/lazypkg_0.1.4_linux_arm64.tar.gz"
+    }
+  },
+  "checksum_asset_id": 587583319,
+  "checksum_sha256": "5a64aff18aeee361bfafa564c420dcbbd61fcc4bc6431a144acc5fc3dfa23c0b",
+  "release_id": 396321368,
+  "tag": "v0.1.4",
+  "version": "0.1.4"
+}

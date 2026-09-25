@@ -1,0 +1,37 @@
+{
+  "assets": {
+    "darwin_amd64": {
+      "asset_id": 587582102,
+      "name": "lazyset_0.1.2_darwin_amd64.tar.gz",
+      "sha256": "058c305a43bc6bec2696c4bf61df92bcbae9678580dd22b8c96b20fbf810ce5e",
+      "size": 3342754,
+      "url": "https://github.com/daviddwlee84/lazyset/releases/download/v0.1.2/lazyset_0.1.2_darwin_amd64.tar.gz"
+    },
+    "darwin_arm64": {
+      "asset_id": 587582129,
+      "name": "lazyset_0.1.2_darwin_arm64.tar.gz",
+      "sha256": "e2296d24c2be26898f37009184262a6ad90f29feaa98656460d7d7d150e0cdde",
+      "size": 3097853,
+      "url": "https://github.com/daviddwlee84/lazyset/releases/download/v0.1.2/lazyset_0.1.2_darwin_arm64.tar.gz"
+    },
+    "linux_amd64": {
+      "asset_id": 587582155,
+      "name": "lazyset_0.1.2_linux_amd64.tar.gz",
+      "sha256": "8d0a542c1d009d30604fca7d65ab38bdc681c0388f423b87d31e5c5119b675d4",
+      "size": 3291185,
+      "url": "https://github.com/daviddwlee84/lazyset/releases/download/v0.1.2/lazyset_0.1.2_linux_amd64.tar.gz"
+    },
+    "linux_arm64": {
+      "asset_id": 587582179,
+      "name": "lazyset_0.1.2_linux_arm64.tar.gz",
+      "sha256": "1e7e3c7c8d4419decaadc0e1b944b3dd9e73c46588a9e26c76b41e1729098a5a",
+      "size": 2978013,
+      "url": "https://github.com/daviddwlee84/lazyset/releases/download/v0.1.2/lazyset_0.1.2_linux_arm64.tar.gz"
+    }
+  },
+  "checksum_asset_id": 587582056,
+  "checksum_sha256": "c7f35e1d86b2ee37d80e16de769a121a533adb5fd565f6ab35e78cb553b666fa",
+  "release_id": 396320913,
+  "tag": "v0.1.2",
+  "version": "0.1.2"
+}

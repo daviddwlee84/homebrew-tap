@@ -1,0 +1,37 @@
+{
+  "assets": {
+    "darwin_amd64": {
+      "asset_id": 587585351,
+      "name": "lazyansible_0.1.1_darwin_amd64.tar.gz",
+      "sha256": "14b1d1b3cfd4eb4c7c788a7614420e8df4b871c43a383726701a278250af196d",
+      "size": 3209790,
+      "url": "https://github.com/daviddwlee84/lazyansible/releases/download/v0.1.1/lazyansible_0.1.1_darwin_amd64.tar.gz"
+    },
+    "darwin_arm64": {
+      "asset_id": 587585375,
+      "name": "lazyansible_0.1.1_darwin_arm64.tar.gz",
+      "sha256": "7b90daab942b2ecb5afbd9d6b1131432b2b8a9f4f69027180e2245bc82b8a37c",
+      "size": 3006288,
+      "url": "https://github.com/daviddwlee84/lazyansible/releases/download/v0.1.1/lazyansible_0.1.1_darwin_arm64.tar.gz"
+    },
+    "linux_amd64": {
+      "asset_id": 587585396,
+      "name": "lazyansible_0.1.1_linux_amd64.tar.gz",
+      "sha256": "bb59a7e9979f2f14e85d46eacac18cbc39a9e72b1be093f04e5d91b86d61d175",
+      "size": 3160752,
+      "url": "https://github.com/daviddwlee84/lazyansible/releases/download/v0.1.1/lazyansible_0.1.1_linux_amd64.tar.gz"
+    },
+    "linux_arm64": {
+      "asset_id": 587585438,
+      "name": "lazyansible_0.1.1_linux_arm64.tar.gz",
+      "sha256": "3c187568eeb0b2f30df6fff3232ed5d5178c3bf3e328c1720b215379457b5bde",
+      "size": 2888839,
+      "url": "https://github.com/daviddwlee84/lazyansible/releases/download/v0.1.1/lazyansible_0.1.1_linux_arm64.tar.gz"
+    }
+  },
+  "checksum_asset_id": 587585313,
+  "checksum_sha256": "39c4b2334b2cfb532890ad7314ca7ff5a12ae3e9cca1400ce857e578cff89484",
+  "release_id": 396322229,
+  "tag": "v0.1.1",
+  "version": "0.1.1"
+}

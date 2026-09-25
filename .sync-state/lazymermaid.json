@@ -1,0 +1,37 @@
+{
+  "assets": {
+    "darwin_amd64": {
+      "asset_id": 587582277,
+      "name": "lazymermaid_0.1.1_darwin_amd64.tar.gz",
+      "sha256": "526e1e0480483a6cf570e2c7bda31ef8a35a0758d3bed97cc2e24c7e602ef593",
+      "size": 5648658,
+      "url": "https://github.com/daviddwlee84/lazymermaid/releases/download/v0.1.1/lazymermaid_0.1.1_darwin_amd64.tar.gz"
+    },
+    "darwin_arm64": {
+      "asset_id": 587582308,
+      "name": "lazymermaid_0.1.1_darwin_arm64.tar.gz",
+      "sha256": "e2efe5ad4b7669dbfb11c16b87d985d1d2dab2cea79c07b51c8cdb7a97da6e79",
+      "size": 5289918,
+      "url": "https://github.com/daviddwlee84/lazymermaid/releases/download/v0.1.1/lazymermaid_0.1.1_darwin_arm64.tar.gz"
+    },
+    "linux_amd64": {
+      "asset_id": 587582347,
+      "name": "lazymermaid_0.1.1_linux_amd64.tar.gz",
+      "sha256": "d88a0718205c1875dca22de354e968ca96418e6caf0e10ddc5d8e7f82cad694a",
+      "size": 5566883,
+      "url": "https://github.com/daviddwlee84/lazymermaid/releases/download/v0.1.1/lazymermaid_0.1.1_linux_amd64.tar.gz"
+    },
+    "linux_arm64": {
+      "asset_id": 587582389,
+      "name": "lazymermaid_0.1.1_linux_arm64.tar.gz",
+      "sha256": "ef4f7ba61182fa867ede6de6b4b04eafa9b3ca4310e62ff9bef8a1df513ee7ae",
+      "size": 5085565,
+      "url": "https://github.com/daviddwlee84/lazymermaid/releases/download/v0.1.1/lazymermaid_0.1.1_linux_arm64.tar.gz"
+    }
+  },
+  "checksum_asset_id": 587582249,
+  "checksum_sha256": "ea8af78cd1d18cd99f50432ed25a83fd822562508ffa13397ef5ebe7673bd593",
+  "release_id": 396320973,
+  "tag": "v0.1.1",
+  "version": "0.1.1"
+}

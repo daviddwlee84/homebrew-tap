@@ -1,0 +1,37 @@
+{
+  "assets": {
+    "darwin_amd64": {
+      "asset_id": 587585704,
+      "name": "lazycrontab_0.1.3_darwin_amd64.tar.gz",
+      "sha256": "f63af52d756c22c5630485eebe532c4a0a47355961c1416e6df3f64221f14327",
+      "size": 4588933,
+      "url": "https://github.com/daviddwlee84/lazycrontab/releases/download/v0.1.3/lazycrontab_0.1.3_darwin_amd64.tar.gz"
+    },
+    "darwin_arm64": {
+      "asset_id": 587585740,
+      "name": "lazycrontab_0.1.3_darwin_arm64.tar.gz",
+      "sha256": "47b9e16086da336ccf491ec95caa7eb67c069e655239fb6809e4b512a65144f9",
+      "size": 4279015,
+      "url": "https://github.com/daviddwlee84/lazycrontab/releases/download/v0.1.3/lazycrontab_0.1.3_darwin_arm64.tar.gz"
+    },
+    "linux_amd64": {
+      "asset_id": 587585778,
+      "name": "lazycrontab_0.1.3_linux_amd64.tar.gz",
+      "sha256": "a65c29ceb1c5d1d54640a3779d2486dbfea1121118077a39f7be8fa0356e6e1a",
+      "size": 4539235,
+      "url": "https://github.com/daviddwlee84/lazycrontab/releases/download/v0.1.3/lazycrontab_0.1.3_linux_amd64.tar.gz"
+    },
+    "linux_arm64": {
+      "asset_id": 587585816,
+      "name": "lazycrontab_0.1.3_linux_arm64.tar.gz",
+      "sha256": "235bd1efaafc8153ed2487a111da23f240f0c9fcadc843208a1e6fb2e01c56c8",
+      "size": 4135101,
+      "url": "https://github.com/daviddwlee84/lazycrontab/releases/download/v0.1.3/lazycrontab_0.1.3_linux_arm64.tar.gz"
+    }
+  },
+  "checksum_asset_id": 587585680,
+  "checksum_sha256": "c1c7b32c758128d0fd01760a583b283826adea3acaf0db6655d24b93800a0ea9",
+  "release_id": 396322378,
+  "tag": "v0.1.3",
+  "version": "0.1.3"
+}
