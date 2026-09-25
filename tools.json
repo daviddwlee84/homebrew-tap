@@ -85,7 +85,12 @@
     "archive": "lazyansible_{version}_{os}_{arch}.tar.gz",
     "checksums": "checksums.txt",
     "bundled_completions": true,
-    "head": false
+    "head": false,
+    "upgrade_check": [
+      "upgrade",
+      "--check",
+      "--json"
+    ]
   },
   {
     "formula": "lazycrontab",
@@ -96,7 +101,12 @@
     "archive": "lazycrontab_{version}_{os}_{arch}.tar.gz",
     "checksums": "checksums.txt",
     "bundled_completions": true,
-    "head": false
+    "head": false,
+    "upgrade_check": [
+      "upgrade",
+      "--check",
+      "--json"
+    ]
   },
   {
     "formula": "lazyfind",
@@ -107,7 +117,12 @@
     "archive": "lazyfind_{version}_{os}_{arch}.tar.gz",
     "checksums": "checksums.txt",
     "bundled_completions": true,
-    "head": false
+    "head": false,
+    "upgrade_check": [
+      "upgrade",
+      "--check",
+      "--json"
+    ]
   },
   {
     "formula": "lazypkg",
@@ -118,7 +133,13 @@
     "archive": "lazypkg_{version}_{os}_{arch}.tar.gz",
     "checksums": "checksums.txt",
     "bundled_completions": true,
-    "head": false
+    "head": false,
+    "upgrade_check": [
+      "self",
+      "upgrade",
+      "--check",
+      "--json"
+    ]
   },
   {
     "formula": "lazymermaid",
@@ -129,7 +150,12 @@
     "archive": "lazymermaid_{version}_{os}_{arch}.tar.gz",
     "checksums": "checksums.txt",
     "bundled_completions": true,
-    "head": false
+    "head": false,
+    "upgrade_check": [
+      "upgrade",
+      "--check",
+      "--json"
+    ]
   },
   {
     "formula": "lazyset",
@@ -140,6 +166,11 @@
     "archive": "lazyset_{version}_{os}_{arch}.tar.gz",
     "checksums": "checksums.txt",
     "bundled_completions": true,
-    "head": false
+    "head": false,
+    "upgrade_check": [
+      "upgrade",
+      "--check",
+      "--json"
+    ]
   }
 ]

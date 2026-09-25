@@ -244,6 +244,20 @@ def brew_smoke(tool):
     run(["brew", "audit", "--strict", name])
     run(["brew", "install", "--formula", "--build-from-source", name])
     run(["brew", "test", name])
+    if tool.get("upgrade_check"):
+        prefix = subprocess.check_output(["brew", "--prefix", name], text=True).strip()
+        binary = str(Path(prefix) / "bin" / tool["binary"])
+        with tempfile.TemporaryDirectory(prefix="brew-upgrade-check-") as temporary:
+            home = Path(temporary)
+            env = {**os.environ, "HOME": temporary, "XDG_CONFIG_HOME": str(home / "config"),
+                   "XDG_DATA_HOME": str(home / "data"), "XDG_STATE_HOME": str(home / "state"),
+                   "XDG_CACHE_HOME": str(home / "cache")}
+            report = json.loads(subprocess.check_output([binary, *tool["upgrade_check"]],
+                                                       env=env, text=True, timeout=30))
+            if (report.get("manager", report.get("owner")) != "homebrew"
+                    or report.get("formula") != name
+                    or not report.get("can_upgrade", report.get("supported", False))):
+                raise ValueError("installed binary did not recognize its verified Homebrew owner")
 
 
 def sync_tool(tool, *, root, write, bootstrap, smoke):
