@@ -5,23 +5,23 @@ class Lazypkg < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/daviddwlee84/lazypkg/releases/download/v0.1.4/lazypkg_0.1.4_darwin_arm64.tar.gz"
-      sha256 "e4b4ced7235987e138f210b4d58d87c38b5b6e478e349c63244d1d1f8a4d16d3"
+      url "https://github.com/daviddwlee84/lazypkg/releases/download/v0.2.1/lazypkg_0.2.1_darwin_arm64.tar.gz"
+      sha256 "a859d610f045193c2ff6dcb30713340c5ba29166dd79b4e9e3465b8fb3ba2cc2"
     end
     on_intel do
-      url "https://github.com/daviddwlee84/lazypkg/releases/download/v0.1.4/lazypkg_0.1.4_darwin_amd64.tar.gz"
-      sha256 "efed634908522f01ba392fdde7936037c3754f758c9e3e5ea7147a2c3ecd2425"
+      url "https://github.com/daviddwlee84/lazypkg/releases/download/v0.2.1/lazypkg_0.2.1_darwin_amd64.tar.gz"
+      sha256 "947fe9a15d83cb46a265a14766749dc8ccb3e8278b781e2627390ad452df46c6"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/daviddwlee84/lazypkg/releases/download/v0.1.4/lazypkg_0.1.4_linux_arm64.tar.gz"
-      sha256 "b70902b9cbc6a25d08434cb3546fb0381cc6622de5772f2e0fc98e7015c0dc65"
+      url "https://github.com/daviddwlee84/lazypkg/releases/download/v0.2.1/lazypkg_0.2.1_linux_arm64.tar.gz"
+      sha256 "d90fc73ad7cfc5443a86a38d76fac9bdc331daf55d9316719ea66ce72c448d7f"
     end
     on_intel do
-      url "https://github.com/daviddwlee84/lazypkg/releases/download/v0.1.4/lazypkg_0.1.4_linux_amd64.tar.gz"
-      sha256 "a6efbe9a415856bfd42d48b08a17d409955106e76289e073d28ea668c9e82590"
+      url "https://github.com/daviddwlee84/lazypkg/releases/download/v0.2.1/lazypkg_0.2.1_linux_amd64.tar.gz"
+      sha256 "6364f56a0e2bf1af0d7c5e2f46b30ef5790ed0a55da1c70174c73e2b87dfac46"
     end
   end
 
