@@ -2,6 +2,7 @@ class Lazypg < Formula
   desc "PostgreSQL development workflow with explicit environments and schema plans"
   homepage "https://github.com/daviddwlee84/lazypg"
   license "MIT"
+  revision 1
 
   on_macos do
     on_arm do
@@ -27,6 +28,7 @@ class Lazypg < Formula
 
   def install
     bin.install "lazypg"
+    prefix.install "THIRD_PARTY_NOTICES.txt"
     bash_completion.install "completions/lazypg.bash" => "lazypg"
     zsh_completion.install "completions/lazypg.zsh" => "_lazypg"
     fish_completion.install "completions/lazypg.fish" if File.exist?("completions/lazypg.fish")
@@ -35,5 +37,6 @@ class Lazypg < Formula
   test do
     assert_match version.to_s, shell_output("#{bin}/lazypg --version")
     assert_match "Usage:", shell_output("#{bin}/lazypg --help")
+    assert_path_exists prefix/"THIRD_PARTY_NOTICES.txt"
   end
 end
