@@ -107,12 +107,25 @@ def formula_class(name):
     return "".join(word.capitalize() for word in name.split("-"))
 
 
+def formula_revision(tool, tag):
+    revision = tool.get("formula_revision", {})
+    if revision.get("tag") != tag:
+        return 0
+    number = revision.get("number", 0)
+    if type(number) is not int or number < 0:
+        raise ValueError("formula revision must be a nonnegative integer")
+    return number
+
+
 def render_formula(tool, plan):
     binary = tool["binary"]
     lines = [f'class {formula_class(tool["formula"])} < Formula',
              f'  desc {json.dumps(tool["description"])}',
              f'  homepage "https://github.com/{tool["repo"]}"',
              f'  license "{tool["license"]}"', ""]
+    revision = formula_revision(tool, plan["tag"])
+    if revision:
+        lines.insert(4, f"  revision {revision}")
     if tool["head"]:
         lines += ["  head do", f'    url "https://github.com/{tool["repo"]}.git", branch: "main"',
                   '    depends_on "go" => :build', "  end", ""]
@@ -136,6 +149,8 @@ def render_formula(tool, plan):
         lines += ["    else"]
     indent = "      " if tool["head"] else "    "
     lines += [f'{indent}bin.install "{binary}"']
+    if tool.get("bundled_notices"):
+        lines += [f'{indent}prefix.install "THIRD_PARTY_NOTICES.txt"']
     if tool["bundled_completions"]:
         lines += [f'{indent}bash_completion.install "completions/{binary}.bash" => "{binary}"',
                   f'{indent}zsh_completion.install "completions/{binary}.zsh" => "_{binary}"',
@@ -146,11 +161,15 @@ def render_formula(tool, plan):
         lines += [f'    generate_completions_from_executable(bin/"{binary}", shell_parameter_format: :cobra)']
     lines += ["  end", "", "  test do", f'    assert_match version.to_s, shell_output("#{{bin}}/{binary} --version")',
               f'    assert_match "Usage:", shell_output("#{{bin}}/{binary} --help")', "  end", "end", ""]
+    if tool.get("bundled_notices"):
+        lines.insert(-3, '    assert_path_exists prefix/"THIRD_PARTY_NOTICES.txt"')
     return "\n".join(lines)
 
 
 def unpack_verified(tool, archive, destination):
     required = [tool["binary"]]
+    if tool.get("bundled_notices"):
+        required += ["THIRD_PARTY_NOTICES.txt"]
     if tool["bundled_completions"]:
         required += ["LICENSE", f'completions/{tool["binary"]}.bash', f'completions/{tool["binary"]}.zsh']
     with tarfile.open(archive, "r:gz") as bundle:
@@ -279,9 +298,15 @@ def sync_tool(tool, *, root, write, bootstrap, smoke):
     previous = json.loads(receipt.read_text()) if receipt.exists() else None
     rendered = render_formula(tool, plan)
     if guard_previous(previous, plan):
-        if not formula.exists() or formula.read_text() != rendered:
-            raise ValueError("same-version generated formula drift; review the change explicitly")
-        return "unchanged " + plan["tag"]
+        if formula.exists() and formula.read_text() == rendered:
+            return "unchanged " + plan["tag"]
+        old_text = formula.read_text() if formula.exists() else ""
+        old_revision = re.search(r"(?m)^  revision (\d+)$", old_text)
+        old_revision = int(old_revision.group(1)) if old_revision else 0
+        if not formula.exists() or formula_revision(tool, plan["tag"]) <= old_revision:
+            raise ValueError("same-version generated formula drift; review with an increased formula revision")
+        # A reviewed package-only revision still verifies immutable asset identity
+        # above and executes all archive/install checks below before committing.
     if previous is None and formula.exists() and not bootstrap:
         raise ValueError("existing formula needs an explicit bootstrap run")
     if previous is None and formula.exists():

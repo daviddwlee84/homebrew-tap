@@ -182,6 +182,11 @@
     "archive": "lazypg_{version}_{os}_{arch}.tar.gz",
     "checksums": "checksums.txt",
     "bundled_completions": true,
-    "head": false
+    "head": false,
+    "bundled_notices": true,
+    "formula_revision": {
+      "tag": "v0.1.2",
+      "number": 1
+    }
   }
 ]

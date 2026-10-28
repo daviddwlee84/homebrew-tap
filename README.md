@@ -64,7 +64,12 @@ successful tools can be committed while the job still reports any failed tool.
 `--bootstrap` validates the existing unrecorded formulas during the initial
 source-to-binary migration. It does not bypass immutable-tag checks once a
 receipt exists, nor allow a version downgrade. Do not hand-edit generated
-formulas or `.sync-state` receipts.
+formulas or `.sync-state` receipts. For reviewed packaging-only corrections,
+`formula_revision: {"tag": "vX.Y.Z", "number": N}` in tools.json must strictly
+increase the installed formula revision; the workflow still verifies unchanged
+upstream asset identity and repeats all install checks. The revision applies only
+to that tag, so a new upstream release resets it. `bundled_notices` requires and
+installs THIRD_PARTY_NOTICES.txt from the release archives.
 
 ## Validation
 

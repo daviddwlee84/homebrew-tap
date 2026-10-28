@@ -193,6 +193,13 @@ class ArtifactContracts(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'missing'):
             sync.unpack_verified(TOOLS[1], self.archive([('translate', 'file')]), self.root / 'unpack')
 
+    def test_bundled_notices_are_required_and_extracted(self):
+        tool = dict(TOOLS[0], bundled_notices=True)
+        with self.assertRaisesRegex(ValueError, 'THIRD_PARTY_NOTICES'):
+            sync.unpack_verified(tool, self.archive([('dev', 'file')]), self.root / 'unpack')
+        sync.unpack_verified(tool, self.archive([('dev', 'file'), ('THIRD_PARTY_NOTICES.txt', 'file')]), self.root / 'with-notices')
+        self.assertEqual((self.root / 'with-notices/THIRD_PARTY_NOTICES.txt').read_text(), 'abc')
+
     def test_binary_architecture_validation(self):
         binary = self.root / 'binary'
         for target in sync.TARGETS:
@@ -251,6 +258,33 @@ class SynchronizationContracts(unittest.TestCase):
         self.assertIn('unchanged', self.invoke())
         self.validate.assert_not_called()
         self.assertEqual(stamp, self.formula.stat().st_mtime_ns)
+
+    def test_reviewed_revision_revalidates_unchanged_assets_and_resets_next_tag(self):
+        self.formula.parent.mkdir()
+        self.formula.write_text(sync.render_formula(TOOLS[0], self.plan))
+        self.receipt.parent.mkdir()
+        self.receipt.write_text(json.dumps(self.plan))
+        change = {'formula_revision': {'tag': self.plan['tag'], 'number': 1}, 'bundled_notices': True}
+        smoke = mock.Mock()
+        with mock.patch.dict(TOOLS[0], change):
+            self.assertIn('updated', self.invoke(smoke=smoke))
+            self.validate.assert_called_once()
+            smoke.assert_called_once()
+            self.assertIn('  revision 1', self.formula.read_text())
+            self.assertIn('prefix.install "THIRD_PARTY_NOTICES.txt"', self.formula.read_text())
+            self.assertEqual(json.loads(self.receipt.read_text()), self.plan)
+            self.assertEqual(sync.formula_revision(TOOLS[0], 'v99.0.0'), 0)
+        with self.assertRaisesRegex(ValueError, 'drift'):
+            self.invoke()
+
+    def test_same_revision_cannot_refresh_formula_drift(self):
+        self.formula.parent.mkdir()
+        self.formula.write_text(sync.render_formula(TOOLS[0], self.plan) + '# drift\n')
+        self.receipt.parent.mkdir()
+        self.receipt.write_text(json.dumps(self.plan))
+        with self.assertRaisesRegex(ValueError, 'drift'):
+            self.invoke()
+        self.validate.assert_not_called()
 
     def test_existing_formula_requires_bootstrap(self):
         self.formula.parent.mkdir()
