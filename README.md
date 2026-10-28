@@ -1,6 +1,6 @@
 # homebrew-tap
 
-Prebuilt Homebrew formulas for thirteen personal CLI/TUI tools:
+Prebuilt Homebrew formulas for fourteen personal CLI/TUI tools:
 
 ```sh
 brew install daviddwlee84/tap/dev-cli
@@ -16,6 +16,7 @@ brew install daviddwlee84/tap/lazyfind
 brew install daviddwlee84/tap/lazypkg
 brew install daviddwlee84/tap/lazymermaid
 brew install daviddwlee84/tap/lazyset
+brew install daviddwlee84/tap/lazypg
 ```
 
 `dev-cli` installs `dev`; `exp-cli` installs `exp`. Stable formulas install
@@ -35,7 +36,7 @@ manual dispatch. Its own repository-scoped `GITHUB_TOKEN` reads public releases
 and commits successful updates. No cross-repository token is needed.
 
 ```sh
-# All thirteen tools:
+# All fourteen tools:
 gh workflow run sync.yml --repo daviddwlee84/homebrew-tap
 # Select one formula:
 gh workflow run sync.yml --repo daviddwlee84/homebrew-tap -f tool=dev-cli

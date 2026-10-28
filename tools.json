@@ -172,5 +172,16 @@
       "--check",
       "--json"
     ]
+  },
+  {
+    "formula": "lazypg",
+    "binary": "lazypg",
+    "repo": "daviddwlee84/lazypg",
+    "description": "PostgreSQL development workflow with explicit environments and schema plans",
+    "license": "MIT",
+    "archive": "lazypg_{version}_{os}_{arch}.tar.gz",
+    "checksums": "checksums.txt",
+    "bundled_completions": true,
+    "head": false
   }
 ]
