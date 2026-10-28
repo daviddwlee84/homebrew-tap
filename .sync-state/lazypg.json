@@ -1,0 +1,37 @@
+{
+  "assets": {
+    "darwin_amd64": {
+      "asset_id": 685096866,
+      "name": "lazypg_0.1.2_darwin_amd64.tar.gz",
+      "sha256": "e8536a52b934cbc9651263f37f4a5c9ac1418a617954208679420f547cbd2cee",
+      "size": 5875676,
+      "url": "https://github.com/daviddwlee84/lazypg/releases/download/v0.1.2/lazypg_0.1.2_darwin_amd64.tar.gz"
+    },
+    "darwin_arm64": {
+      "asset_id": 685096930,
+      "name": "lazypg_0.1.2_darwin_arm64.tar.gz",
+      "sha256": "58d00a8459379bccc0af19a8fb082ca49f9f083617966c94f20f134de075bd77",
+      "size": 5448119,
+      "url": "https://github.com/daviddwlee84/lazypg/releases/download/v0.1.2/lazypg_0.1.2_darwin_arm64.tar.gz"
+    },
+    "linux_amd64": {
+      "asset_id": 685097008,
+      "name": "lazypg_0.1.2_linux_amd64.tar.gz",
+      "sha256": "9d00bcd42b020ffcb08885ead3bd1a94350c00b2d76bec3ce1415da8cf7280ff",
+      "size": 5754293,
+      "url": "https://github.com/daviddwlee84/lazypg/releases/download/v0.1.2/lazypg_0.1.2_linux_amd64.tar.gz"
+    },
+    "linux_arm64": {
+      "asset_id": 685097099,
+      "name": "lazypg_0.1.2_linux_arm64.tar.gz",
+      "sha256": "55ff079f1b46060153c21cd8b935cfcc3433ffcb744f20d08721ebe0b467aa20",
+      "size": 5204365,
+      "url": "https://github.com/daviddwlee84/lazypg/releases/download/v0.1.2/lazypg_0.1.2_linux_arm64.tar.gz"
+    }
+  },
+  "checksum_asset_id": 685096808,
+  "checksum_sha256": "894f2cafb287fad0eab3b66cdfa45f21ca60531e974daab94b2d2eaf56812ed6",
+  "release_id": 426707693,
+  "tag": "v0.1.2",
+  "version": "0.1.2"
+}
