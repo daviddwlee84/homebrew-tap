@@ -10,23 +10,23 @@ class Translate < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/daviddwlee84/translate/releases/download/v0.6.2/translate_0.6.2_darwin_arm64.tar.gz"
-      sha256 "b9c1190d9c471c8110e37788d67f3c0df64c9c424099dc5fcf2205c13e7b4036"
+      url "https://github.com/daviddwlee84/translate/releases/download/v0.7.0/translate_0.7.0_darwin_arm64.tar.gz"
+      sha256 "1561e5364bb5df767c0ebf57f9765c35815e37cfa18b803a03015af266f61678"
     end
     on_intel do
-      url "https://github.com/daviddwlee84/translate/releases/download/v0.6.2/translate_0.6.2_darwin_amd64.tar.gz"
-      sha256 "50f1e456e3d4e23b61b42ca48f026e1ac12529802b11dbcdb591fd5eaf08d3a1"
+      url "https://github.com/daviddwlee84/translate/releases/download/v0.7.0/translate_0.7.0_darwin_amd64.tar.gz"
+      sha256 "b484d00a8898946765307d9ac7665e99b573a520908a2e3045c58d8e791adb7d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/daviddwlee84/translate/releases/download/v0.6.2/translate_0.6.2_linux_arm64.tar.gz"
-      sha256 "e34d38c1cf2ec1e61f35ecc330586c4cfaf21d98ecb5547e2cdb9b4ec61c4933"
+      url "https://github.com/daviddwlee84/translate/releases/download/v0.7.0/translate_0.7.0_linux_arm64.tar.gz"
+      sha256 "7b6f3f6e9392c5276e91b6cf54059a70bb7ec5f8a680cdfdd6e7fbe327d20777"
     end
     on_intel do
-      url "https://github.com/daviddwlee84/translate/releases/download/v0.6.2/translate_0.6.2_linux_amd64.tar.gz"
-      sha256 "8437164fe2ce4e2fd91e85b876ed770c3ced45b55196f5a53ad687ecd26f80a6"
+      url "https://github.com/daviddwlee84/translate/releases/download/v0.7.0/translate_0.7.0_linux_amd64.tar.gz"
+      sha256 "f5fa5bdc5e9cf758b1c9874ddc947f322b67118e731a63bf77adeb5a5aab8309"
     end
   end
 
