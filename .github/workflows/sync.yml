@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       tool:
-        description: Comma-separated formula names; leave empty to sync all fourteen tools
+        description: Comma-separated formula names; leave empty to sync all fifteen tools
         type: string
         default: ""
       bootstrap:
