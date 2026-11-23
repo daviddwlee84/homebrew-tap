@@ -188,5 +188,16 @@
       "tag": "v0.1.2",
       "number": 1
     }
+  },
+  {
+    "formula": "lazylongarm",
+    "binary": "lazylongarm",
+    "repo": "daviddwlee84/lazylongarm",
+    "description": "Set up and operate a Longarm hub and workers over SSH",
+    "license": "MIT",
+    "archive": "lazylongarm_{version}_{os}_{arch}.tar.gz",
+    "checksums": "checksums.txt",
+    "bundled_completions": true,
+    "head": false
   }
 ]
