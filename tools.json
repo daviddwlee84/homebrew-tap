@@ -198,6 +198,11 @@
     "archive": "lazylongarm_{version}_{os}_{arch}.tar.gz",
     "checksums": "checksums.txt",
     "bundled_completions": true,
-    "head": false
+    "head": false,
+    "upgrade_check": [
+      "upgrade",
+      "--check",
+      "--json"
+    ]
   }
 ]

@@ -50,7 +50,7 @@ their release checksum file must exist. Each archive is checksum-verified,
 checked for safe members and the correct executable architecture, and the native
 binary is exercised in a temporary home. Ruby parsing, Homebrew style/audit,
 installation, and `brew test` must pass before a formula and its receipt are kept.
-The six new lazy tools also run their read-only JSON upgrade check against the
+The six new lazy tools and lazylongarm also run their read-only JSON upgrade check against the
 actual installed formula; it must identify Homebrew, the exact tap-qualified
 formula, and supported upgrade ownership.
 The installation smoke runs on an isolated Linux GitHub runner, not the user's
