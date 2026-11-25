@@ -1,37 +1,37 @@
 {
   "assets": {
     "darwin_amd64": {
-      "asset_id": 792035207,
-      "name": "lazylongarm_0.5.0_darwin_amd64.tar.gz",
-      "sha256": "dab29574b98c8868519c04c1dcb625ef43233a1507faf6f62ed531b6308b71df",
-      "size": 5177879,
-      "url": "https://github.com/daviddwlee84/lazylongarm/releases/download/v0.5.0/lazylongarm_0.5.0_darwin_amd64.tar.gz"
+      "asset_id": 792094670,
+      "name": "lazylongarm_0.5.1_darwin_amd64.tar.gz",
+      "sha256": "4292e9c15d4af07939ff474247655e17becbaeac94a2b4ee76e229ecfc3acf0b",
+      "size": 5179219,
+      "url": "https://github.com/daviddwlee84/lazylongarm/releases/download/v0.5.1/lazylongarm_0.5.1_darwin_amd64.tar.gz"
     },
     "darwin_arm64": {
-      "asset_id": 792035204,
-      "name": "lazylongarm_0.5.0_darwin_arm64.tar.gz",
-      "sha256": "09e4d291fd0e11749d231979d0e3862c51cf26783f82d41021b22cde197d0c85",
-      "size": 4832141,
-      "url": "https://github.com/daviddwlee84/lazylongarm/releases/download/v0.5.0/lazylongarm_0.5.0_darwin_arm64.tar.gz"
+      "asset_id": 792094673,
+      "name": "lazylongarm_0.5.1_darwin_arm64.tar.gz",
+      "sha256": "26a04246008356410681eb5cb7a65a4483268c51d919899a00922acc17475e42",
+      "size": 4833103,
+      "url": "https://github.com/daviddwlee84/lazylongarm/releases/download/v0.5.1/lazylongarm_0.5.1_darwin_arm64.tar.gz"
     },
     "linux_amd64": {
-      "asset_id": 792035206,
-      "name": "lazylongarm_0.5.0_linux_amd64.tar.gz",
-      "sha256": "b5d8af0609e2e5fafa1c0601ef85fdd099c9eb156dc404a835b5884e94c4e66d",
-      "size": 5111703,
-      "url": "https://github.com/daviddwlee84/lazylongarm/releases/download/v0.5.0/lazylongarm_0.5.0_linux_amd64.tar.gz"
+      "asset_id": 792094664,
+      "name": "lazylongarm_0.5.1_linux_amd64.tar.gz",
+      "sha256": "4864a81776b17fe36c458d2d2622abc171a0b1c49c5e7e3ae86bedda70292a77",
+      "size": 5113072,
+      "url": "https://github.com/daviddwlee84/lazylongarm/releases/download/v0.5.1/lazylongarm_0.5.1_linux_amd64.tar.gz"
     },
     "linux_arm64": {
-      "asset_id": 792035202,
-      "name": "lazylongarm_0.5.0_linux_arm64.tar.gz",
-      "sha256": "2cf8f5480d4e9156844a24abbbc1d2b00e9c5d6061242af7bb85b9d78bccea0d",
-      "size": 4657178,
-      "url": "https://github.com/daviddwlee84/lazylongarm/releases/download/v0.5.0/lazylongarm_0.5.0_linux_arm64.tar.gz"
+      "asset_id": 792094668,
+      "name": "lazylongarm_0.5.1_linux_arm64.tar.gz",
+      "sha256": "2dea0d7afb8df8b34a0e5b456167f670060a9876bfadda2fc35153b610195a6f",
+      "size": 4657431,
+      "url": "https://github.com/daviddwlee84/lazylongarm/releases/download/v0.5.1/lazylongarm_0.5.1_linux_arm64.tar.gz"
     }
   },
-  "checksum_asset_id": 792035274,
-  "checksum_sha256": "2340540e0868c3572c21e9253348aa00d9d1f84cb6498fca81d51a705c28b183",
-  "release_id": 458287610,
-  "tag": "v0.5.0",
-  "version": "0.5.0"
+  "checksum_asset_id": 792094753,
+  "checksum_sha256": "b38479c557d5e2e5106719ba88be19adab0ee2efbe2ea3022bdd8bcdd7013cde",
+  "release_id": 458308226,
+  "tag": "v0.5.1",
+  "version": "0.5.1"
 }
