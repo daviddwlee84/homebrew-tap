@@ -5,23 +5,23 @@ class Lazylongarm < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/daviddwlee84/lazylongarm/releases/download/v0.5.1/lazylongarm_0.5.1_darwin_arm64.tar.gz"
-      sha256 "26a04246008356410681eb5cb7a65a4483268c51d919899a00922acc17475e42"
+      url "https://github.com/daviddwlee84/lazylongarm/releases/download/v0.5.2/lazylongarm_0.5.2_darwin_arm64.tar.gz"
+      sha256 "d73c4ef41301751af08f4f675ba73e606c325733cb9c93e5c56f4627711250ba"
     end
     on_intel do
-      url "https://github.com/daviddwlee84/lazylongarm/releases/download/v0.5.1/lazylongarm_0.5.1_darwin_amd64.tar.gz"
-      sha256 "4292e9c15d4af07939ff474247655e17becbaeac94a2b4ee76e229ecfc3acf0b"
+      url "https://github.com/daviddwlee84/lazylongarm/releases/download/v0.5.2/lazylongarm_0.5.2_darwin_amd64.tar.gz"
+      sha256 "e7c555f1195059b4010a6285e46e697cdb4b7204f7c723cc9e7b0463760adfbe"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/daviddwlee84/lazylongarm/releases/download/v0.5.1/lazylongarm_0.5.1_linux_arm64.tar.gz"
-      sha256 "2dea0d7afb8df8b34a0e5b456167f670060a9876bfadda2fc35153b610195a6f"
+      url "https://github.com/daviddwlee84/lazylongarm/releases/download/v0.5.2/lazylongarm_0.5.2_linux_arm64.tar.gz"
+      sha256 "a9f068c78a3848042500dab436fb0efe815478564e0cfb5baae0bb05d5a10805"
     end
     on_intel do
-      url "https://github.com/daviddwlee84/lazylongarm/releases/download/v0.5.1/lazylongarm_0.5.1_linux_amd64.tar.gz"
-      sha256 "4864a81776b17fe36c458d2d2622abc171a0b1c49c5e7e3ae86bedda70292a77"
+      url "https://github.com/daviddwlee84/lazylongarm/releases/download/v0.5.2/lazylongarm_0.5.2_linux_amd64.tar.gz"
+      sha256 "033464fb5483ace94c9658c51610930c253304bc3ba72a77c4570a7682cab046"
     end
   end
 
